@@ -31,6 +31,7 @@ Click Label Tambah Role
 Cilck Label Staff
     Click Element                    ${labelStaff}
 Click Delete Role Staff
+    Wait Until Element Is Visible    ${deleteRole}      timeout=10s
     Click Element                    ${deleteRole}
 Verify Role Staff
     Wait Until Element Is Visible    ${verifyRoleStaff}

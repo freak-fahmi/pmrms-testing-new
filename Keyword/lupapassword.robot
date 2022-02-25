@@ -11,6 +11,9 @@ ${emailTdkDiketahui}    testing@gmail.com
 Click Button Lupa Password
     Wait Until Element Is Visible       ${btnLupaPwd}
     Click Element                       ${btnLupaPwd}
+#    Execute JavaScript              document.evaluate("${btnLupaPwd}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
 Verify Page Lupa Password
     Wait Until Element Is Visible       ${verifyPageLupaPwd}
     Page Should Contain Element         ${verifyPageLupaPwd}
@@ -42,6 +45,9 @@ Click Back Dari Input Email
 Click Back Dari Konfirmasi Email
     Wait Until Element Is Visible       ${btnBackFromConfirm}
     Click Element                       ${btnBackFromConfirm}
+#    Execute JavaScript              document.evaluate("${btnBackFromConfirm}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
 Verify Page Login
-    Wait Until Element Is Visible       ${verifyPageLogin}
+    Wait Until Element Is Visible       ${verifyPageLogin}      timeout=10s
     Page Should Contain Element         ${verifyPageLogin}

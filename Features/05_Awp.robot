@@ -17,11 +17,11 @@ Menu AWP
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu awp
-    Scenario 3: User mengklik button index page untuk melihat data selanjutnya
-    Scenario 4: User mengklik field search input by Nama Kegiatan
-    Scenario 5: User mengklik field search input by Pagu Anggaran Awp
-    Scenario 6: User mengklik field search input by Komponen Awp
-    Scenario 7: User menginputkan karakter dan angka tidak sesuai
+#    Scenario 3: User mengklik button index page untuk melihat data selanjutnya
+#    Scenario 4: User mengklik field search input by Nama Kegiatan
+#    Scenario 5: User mengklik field search input by Pagu Anggaran Awp
+#    Scenario 6: User mengklik field search input by Komponen Awp
+#    Scenario 7: User menginputkan karakter dan angka tidak sesuai
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid

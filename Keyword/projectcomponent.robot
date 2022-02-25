@@ -14,7 +14,7 @@ Verify Page Project Component
     Wait Until Element Is Visible    ${verifyProjectComponent}
     Page Should Contain Element      ${verifyProjectComponent}
 Click Submenu Component
-    Wait Until Element Is Visible    ${submenuComponent}
+    Wait Until Element Is Visible    ${submenuComponent}    timeout=10s
     Click Element    ${submenuComponent}
 Verify Submenu Component
     Wait Until Element Is Visible    ${verifySubmenuComponent}
