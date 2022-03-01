@@ -42,7 +42,7 @@ Verify Home Page is open
     Wait Until Element Is Visible    ${Verify_Home_Admin}   timeout=10s
     Page Should Contain Element      ${Verify_Home_Admin}
 Verify Home Page Penanggung Jawab is open
-    Wait Until Element Is Visible    ${Verify_PenanggungJawab}
+    Wait Until Element Is Visible    ${Verify_PenanggungJawab}  timeout=30s
     Page Should Contain Element      ${Verify_PenanggungJawab}
 #Verify Home Page Penanggung Jawab 2 is open
 #    Wait Until Element Is Visible    ${Verify_PenanggungJawab2}
