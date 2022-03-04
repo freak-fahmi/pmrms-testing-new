@@ -66,6 +66,10 @@ Input Pencarian Jabatan
     Go To    http://pmrms.greatpmo.com/administrasi/detail
     Wait Until Element Is Visible    ${inputCari}
     Input Text    ${inputCari}          Staff Treasure PMU
+Input Data No Data
+    Go To    http://pmrms.greatpmo.com/administrasi/detail
+    Wait Until Element Is Visible    ${inputCari}
+    Input Text    ${inputCari}          testing123
 Verify Nama Staff
     Wait Until Element Is Visible       ${verifyNamaStaff}
     Page Should Contain Element         ${verifyNamaStaff}
@@ -75,6 +79,9 @@ Verify Unit Kerja
 Verify Jabatan
     Wait Until Element Is Visible       ${verifyJabatan}
     Page Should Contain Element         ${verifyJabatan}
+Verify No Data
+    Wait Until Element Is Visible       ${nodata}
+    Page Should Contain Element         ${nodata}
 Click Button Cari
     Click Element    ${btnCari}
 Click Button Simpan
