@@ -20,7 +20,7 @@ Click Tab Penugasan
 Click Button Buat Tugas
     Click Element    ${btnBuatTugas}
 Verify Element Page Buat Tugas
-    Wait Until Element Is Visible    ${verifyTambahTugas}
+    Wait Until Element Is Visible    ${verifyTambahTugas}   timeout=30s
     Page Should Contain Element      ${verifyTambahTugas}
 Pilih Nama Penerima Tugas
     Wait Until Element Is Visible    ${pilihPenerimaTugas}

@@ -6,7 +6,7 @@ Resource    ../Xpath/awp.robot
 
 *** Keywords ***
 Click Menu AWP
-    Wait Until Element Is Visible    ${menuAwp}
+    Wait Until Element Is Visible    ${menuAwp}     timeout=30s
     Click Element    ${menuAwp}
 Verify Page AWP
     Wait Until Element Is Visible    ${verifyAwp}
@@ -19,6 +19,7 @@ Input Search by Pagu Anggaran AWP
     Wait Until Element Is Visible    ${searchAwp}
     Input Text      ${searchAwp}    200
 Click Detail Awp
+    Wait Until Element Is Visible    ${detailAwp}   timeout=30s
     Click Element    ${detailAwp}
 Verify Detail Awp
     Wait Until Element Is Visible    ${verifyDetailAwp}

@@ -31,7 +31,7 @@ Scenario 1: Login with username valid and password blank
 Scenario 2: Login with username blank and password valid
     [Documentation]  Feature: Login Invalid
     Given Login page is open
-    And Input Valid Password
+    And Input Valid Password Role
     When Click button submit
     Verify Notif blank username
     [Teardown]  Finish Testcase
@@ -53,7 +53,7 @@ Scenario 5: Login with username valid and password valid
     [Documentation]  Feature: Login Valid
     Given Login page is open
     Input Valid Username role komponen 4
-    And Input Valid Password
+    And Input Valid Password Role
     When Click button submit
     Then Verify Home Page Penanggung Jawab is open
     [Teardown]  Finish Testcase

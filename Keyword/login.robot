@@ -9,7 +9,8 @@ ${usr_role4}            ptm16@madrasah.kemenag.go.id
 ${usr_staffAdmin}       ptm22@madrasah.kemenag.go.id
 ${usr_penagungjawab3}   ptm13@madrasah.kemenag.go.id
 ${usr_penagungjawab4}   ptm14@madrasah.kemenag.go.id
-${adm_pwd}              User@madrasah2022
+${adm_pwd}              123BisA#
+${user_pwd}             User@madrasah2022
 ${adm_pwd_wrong}        1234567890
 
 *** Keywords ***
@@ -31,6 +32,8 @@ Input Valid Username staff administrasi
 #    input text                      ${username}     ${usr_penagungjawab4}
 Input Valid Password
     input text                      ${pwd}          ${adm_pwd}
+Input Valid Password Role
+    Input Text    ${pwd}        ${user_pwd}
 Input Invalid Password
     input text                      ${pwd}          ${adm_pwd_wrong}
 Click Button Submit

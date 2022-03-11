@@ -23,10 +23,10 @@ Menu AWP
 #    Scenario 6: User Mengklik Detail Awp
 #    Scenario 7: User Mengklik Button Kembali dari detail awp
 #    Scenario 8: User mengklik field search input by Komponen Awp
-#    Scenario 9: User menginputkan karakter dan angka tidak sesuai
+    Scenario 9: User menginputkan karakter dan angka tidak sesuai
     #Sprint6
     Scenario 10: User Mengklik Button Tambah AWP
-    Scenario 11: User menginput data pada form lalu melakukan save
+#    Scenario 11: User menginput data pada form lalu melakukan save
     Scenario 12: User Mengklik Button Kembali dari page tambah awp
     Scenario 13: User Mengklik Button Batal dari page tambah awp
 
@@ -75,8 +75,8 @@ Scenario 11: User menginput data pada form lalu melakukan save
     Input Data Pelaksanaan 1
     Input Data Pelaksanaan 2
 Scenario 12: User Mengklik Button Kembali dari page tambah awp
-    Click Button Tambah AWP
-    Verify Page Tambah AWP
+#    Click Button Tambah AWP
+#    Verify Page Tambah AWP
     Click Button Kembali
     Verify Page AWP
 Scenario 13: User Mengklik Button Batal dari page tambah awp

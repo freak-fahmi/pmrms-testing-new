@@ -22,7 +22,7 @@ Menu Profile
 #    Scenario 5: User mengklik button edit dan mengklik button hapus (icon sampah) pada role
     Scenario 6: User mengklik button batal dari page ubah profile
     Scenario 7: User mengklik button ubah password
-    Scenario 8: User Mengubah Password
+#    Scenario 8: User Mengubah Password
     Scenario 9: User mengklik button batal dari page ubah password
 
 

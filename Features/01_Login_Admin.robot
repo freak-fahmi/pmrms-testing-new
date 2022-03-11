@@ -55,5 +55,5 @@ Scenario 5: Login with username valid and password valid
     And Input Valid Username
     And Input Valid Password
     When Click button submit
-    Then Verify Home Page is open
+    Verify Home Page Penanggung Jawab is open
     [Teardown]  Finish Testcase

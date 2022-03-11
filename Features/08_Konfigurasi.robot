@@ -18,7 +18,7 @@ Menu Konfigurasi
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik menu konfigurasi
     Scenario 3: User mengklik button tambah pengguna
-    Scenario 4: User menambahkan pengguna dengan role staff
+#    Scenario 4: User menambahkan pengguna dengan role staff
     Scenario 5: User mengklik Batal dari page tambah pengguna
 
 *** Keywords ***
@@ -45,7 +45,7 @@ Scenario 4: User menambahkan pengguna dengan role staff
     Click Simpan Upload Photo
     Click Button Simpan Tambah Pengguna
 Scenario 5: User mengklik Batal dari page tambah pengguna
-    Click Button Tambah Pengguna
+#    Click Button Tambah Pengguna
     Click Button Batal Tambah Pengguna
     Verify Page Konfigurasi
 Scenario 6: User Search Pencarian by Nama Lengkap
