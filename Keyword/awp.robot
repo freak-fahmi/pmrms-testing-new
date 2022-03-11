@@ -18,6 +18,11 @@ Input Search by Pagu Anggaran AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
     Wait Until Element Is Visible    ${searchAwp}
     Input Text      ${searchAwp}    200
+Click Detail Awp
+    Click Element    ${detailAwp}
+Verify Detail Awp
+    Wait Until Element Is Visible    ${verifyDetailAwp}
+    Page Should Contain Element    ${verifyDetailAwp}
 Input Search by Komponen AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
     Wait Until Element Is Visible    ${searchAwp}
@@ -49,4 +54,97 @@ Click Pagination AWP
 Verify Pagination AWP
     Wait Until Element Is Visible       ${verfyPagination}
     Page Should Contain Element         ${verfyPagination}
+Click Button Tambah AWP
+    Click Element    ${btnAdd}
+Verify Page Tambah AWP
+    Wait Until Element Is Visible       ${verifyAddAwp}
+    Page Should Contain Element         ${verifyAddAwp}
+Click Button Kembali
+    Click Element    ${btnKembali}
+Click Button Batal
+    Wait Until Element Is Visible    ${btnBatal}       timeout=30s
+    Execute JavaScript              document.evaluate("${btnBatal}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Input Data Umum
+    Input Text    ${inputTahun}         2022
+    Click Element    ${pilihKomponen}
+    Click Element    ${clickKomponen}
+    Click Element    ${clickKomponen}
+    Click Element    ${pilihSubcomponent}
+    Click Element    ${clickSubComponent}
+    Click Element    ${clickSubComponent}
+    Sleep    3s
+#    Click Element    ${pilihSubSubComponent}
+    Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${clickSubsubcomponent}
+#    Click Element    ${pilihSubSubComponent}
+    Input Text    ${inputKegiatan}      Automation Testing
+    Input Text    ${inputBudget}        2000000
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${btnLanjut}
+Input Data Kegiatan
+    Input Text    ${TujuanKegiatan}     Automation Testing
+    Input Text    ${descKegiatan}       Automation Testing
+    Click Element    ${radioPenyedia}
+    Input Text    ${tglMulai}       2022-03-17
+    Input Text    ${tglAkhir}       2022-04-17
+    Input Text    ${infoLainnya}    Automation Testing
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Input Data Pelaksanaan 1
+    Click Element    ${tambahLokasi}
+
+    Click Element    ${pilihProvinsi}
+    Wait Until Element Is Visible    ${clickAceh}   timeout=30s
+    Click Element    ${clickAceh}
+    Sleep    3s
+    Click Element    ${clickAceh}
+    Wait Until Element Is Visible    ${pilihkabkota}    timeout=30s
+    Click Element    ${pilihkabkota}
+    Click Element    ${clickAcehBarat}
+    Click Element    ${btnSimpanPopup}
+    Input Text    ${volumeEvent}    200
+    Click Element    ${jenisKegiatan}
+    Click Element    ${pilihJenisKegiatan}
+    Click Element    ${pilihJenisKegiatan}
+    Input Text    ${jmlnarasumber}      10
+    Input Text    ${asallembaga}        pendidikan
+    Input Text    ${narasumberLainnya}    fahmi
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Input Data Pelaksanaan 2
+    Input Text    ${jmlPeserta}     500
+    Input Text    ${pesertaLainnya}     fahmi
+    Input Text    ${outputKegiatan}     Automation Testing
+    Click Element    ${btnPDOI}
+    Click Element    ${pilihPDOI}
+    Click Element    ${btnPDOI}
+    Sleep    3s
+    Execute JavaScript              document.evaluate("${kontribusiIRI}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${pilihIRI}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${btnSimpan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Sleep    5s
+    
+    
+
+
 

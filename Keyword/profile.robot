@@ -42,3 +42,12 @@ Click Button Ubah Password
     Click Element                      ${btnUbahPassword}
 Verify Page Ubah Password
     Page Should Contain Element         ${verifyPageUbahPwd}
+Input Password Lama
+    Input Text    ${inputPwdLama}    User@madrasah2022
+Input Password Baru
+    Input Text    ${inputPwdBaru}    123BisA#
+Input Konfirmasi Password
+    Input Text    ${inputKonfPwd}    123BisA#
+Verify Alert Ubah Password
+    Wait Until Element Is Visible    ${alertUbahPwd}
+    Page Should Contain Element      ${alertUbahPwd}

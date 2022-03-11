@@ -42,8 +42,8 @@ Verify Home Page is open
     Wait Until Element Is Visible    ${Verify_Home_Admin}   timeout=30s
     Page Should Contain Element      ${Verify_Home_Admin}
 Verify Home Page Penanggung Jawab is open
-    Wait Until Element Is Visible    ${Verify_PenanggungJawab}  timeout=30s
-    Page Should Contain Element      ${Verify_PenanggungJawab}
+    Wait Until Element Is Visible    ${Verify_Profile}  timeout=30s
+    Page Should Contain Element      ${Verify_Profile}
 #Verify Home Page Penanggung Jawab 2 is open
 #    Wait Until Element Is Visible    ${Verify_PenanggungJawab2}
 #    Page Should Contain Element      ${Verify_PenanggungJawab2}
@@ -65,4 +65,10 @@ Verify Notif blank username & password
 Verify Notif Pengguna tidak diketahui
     Wait Until Element Is Visible    ${usr_tdk_diketahui}
     Page Should Contain Element      ${usr_tdk_diketahui}
+Input Username Doni Wibowo
+   Input Text    ${username}        ptm17@madrasah.kemenag.go.id
+Input Password Doni Wibowo
+    input text                      ${pwd}          ${adm_pwd}
+
+
 

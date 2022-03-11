@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Regression Test Login Role Komponen 4
+Documentation  Regression Test Login Role Komponen
 Library     SeleniumLibrary
 Resource    ../Keyword/browser.robot
 Resource    ../Keyword/login.robot
@@ -11,8 +11,8 @@ Resource    ../Keyword/login.robot
 
 
 *** Test Cases ***
-Login Role Komponen 4
-    [Documentation]  Regression Login Role Komponen 4
+Login Role Komponen
+    [Documentation]  Regression Login Role Komponen
     [Tags]  Functionality
     Scenario 1: Login with username valid and password blank
     Scenario 2: Login with username blank and password valid
