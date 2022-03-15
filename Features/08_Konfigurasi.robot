@@ -20,6 +20,8 @@ Menu Konfigurasi
     Scenario 3: User mengklik button tambah pengguna
 #    Scenario 4: User menambahkan pengguna dengan role staff
     Scenario 5: User mengklik Batal dari page tambah pengguna
+    Scenario 6: User Search Pencarian by Nama Lengkap
+    Scenario 7: User Search Pencarian by Email
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
@@ -51,7 +53,7 @@ Scenario 5: User mengklik Batal dari page tambah pengguna
 Scenario 6: User Search Pencarian by Nama Lengkap
     Search Pencarian by Nama Lengkap
     Click Button Cari
-    Verify Nama Lengkap
+#    Verify Nama Lengkap
 Scenario 7: User Search Pencarian by Email
     Search Pencarian by Email
     Click Button Cari

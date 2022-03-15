@@ -31,7 +31,7 @@ Click Button Cari
     Click Element       ${btnCari}
 Search Pencarian by Nama Lengkap
     Wait Until Element Is Visible    ${inputCari}
-    Input Text    ${inputCari}          Abriyanto
+    Input Text    ${inputCari}          Abiratno
 Verify Nama Lengkap
     Wait Until Element Is Visible       ${verifyNamaLengkap}
     Page Should Contain Element         ${verifyNamaLengkap}
