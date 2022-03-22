@@ -20,3 +20,4 @@ ${inputCari}                 //input[contains(@class,'form-control ng-untouched'
 ${btnCari}                   //button[text()='Cari']
 ${verifyNamaLengkap}         //td[text()='Abriyanto ']
 ${verifyEmail}               //td[text()='ptm18@madrasah.kemenag.go.id']
+${noData}                    //td[text()='No data!']

@@ -9,7 +9,7 @@ ${usr_role4}            ptm16@madrasah.kemenag.go.id
 ${usr_staffAdmin}       ptm22@madrasah.kemenag.go.id
 ${usr_penagungjawab3}   ptm13@madrasah.kemenag.go.id
 ${usr_penagungjawab4}   ptm14@madrasah.kemenag.go.id
-${adm_pwd}              123BisA#
+${adm_pwd}              User@madrasah2022
 ${user_pwd}             User@madrasah2022
 ${adm_pwd_wrong}        1234567890
 

@@ -39,6 +39,13 @@ Search Pencarian by Email
     Go To    http://pmrms.greatpmo.com/configuration/list
     Wait Until Element Is Visible    ${inputCari}
     Input Text    ${inputCari}          ptm18@madrasah.kemenag.go.id
+Search Pencarian No Data
+    Go To    http://pmrms.greatpmo.com/configuration/list
+    Wait Until Element Is Visible    ${inputCari}
+    Input Text    ${inputCari}          testing123
+Verify No Data
+    Wait Until Element Is Visible       ${noData}
+    Page Should Contain Element         ${noData}
 Verify Email
     Wait Until Element Is Visible       ${verifyEmail}
     Page Should Contain Element         ${verifyEmail}

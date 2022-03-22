@@ -16,9 +16,10 @@ Menu Konfigurasi
     [Documentation]  Regression Menu Konfigurasi Pengguna
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
+    #sprint 6
     Scenario 2: User mengklik menu konfigurasi
     Scenario 3: User mengklik button tambah pengguna
-#    Scenario 4: User menambahkan pengguna dengan role staff
+    Scenario 4: User menambahkan pengguna dengan role staff
     Scenario 5: User mengklik Batal dari page tambah pengguna
     Scenario 6: User Search Pencarian by Nama Lengkap
     Scenario 7: User Search Pencarian by Email
@@ -58,6 +59,10 @@ Scenario 7: User Search Pencarian by Email
     Search Pencarian by Email
     Click Button Cari
     Verify Email
+Scenario 8: User Search Untuk data yang tidak ada
+    Search Pencarian No Data
+    Click Button Cari
+    Verify No Data
 
 
 

@@ -16,6 +16,7 @@ Menu AWP
     [Documentation]  Regression Menu AWP
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
+    #Sprint 6
     Scenario 2: User mengklik sidebar menu awp
 #    Scenario 3: User mengklik button index page untuk melihat data selanjutnya
 #    Scenario 4: User mengklik field search input by Nama Kegiatan
