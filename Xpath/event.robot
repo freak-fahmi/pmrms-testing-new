@@ -1,0 +1,11 @@
+*** Variables ***
+${menuEvent}                  //a[contains(.,'Event')]
+${verifyEvent}               //label[@class='title-header']
+${inputCari}                 //input[contains(@class,'form-control ng-untouched')]
+${btnCari}                   //button[text()='Cari']
+${verifyNamaEvent}        //td[text()='Kegiatan baru 1']
+${lihatDetail}               //button[text()='Lihat']
+${btnKembali}               //label[text()='Kembali']
+${noData}                    //td[text()='No data!']
+${verifyDetail}             //label[@class='font-size-20 mt-2']
+${btnKeluar}                //button[text()='Keluar']

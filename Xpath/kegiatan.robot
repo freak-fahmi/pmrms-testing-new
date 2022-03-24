@@ -1,0 +1,10 @@
+*** Variables ***
+${menuKegiatan}                  //a[contains(.,'Kegiatan')]
+${verifyKegiatan}               //label[@class='title-header']
+${inputCari}                 //input[contains(@class,'form-control ng-untouched')]
+${btnCari}                   //button[text()='Cari']
+${verifyNamaKegiatan}        //td[text()='Kegiatan baru 1']
+${lihatDetail}               //button[text()='Lihat']
+${btnKembali}               //label[text()='Kembali']
+${noData}                    //td[text()='No data!']
+${verifyDetail}             //label[text()='Detail Kegiatan - 1.1.1.H']

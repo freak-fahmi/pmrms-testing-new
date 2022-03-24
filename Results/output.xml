@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20220320 09:32:05.481" rpa="false">
-<suite id="s1" name="08 Konfigurasi" source="D:\pyCharmProject\pmrms-testing\Features\08_Konfigurasi.robot">
-<test id="s1-t1" name="Menu Konfigurasi">
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20220325 05:55:14.451" rpa="false">
+<suite id="s1" name="16 Event" source="D:\pyCharmProject\pmrms-testing\Features\16_Event.robot">
+<test id="s1-t1" name="Menu Kegiatan">
 <kw name="Scenario 1: Login with username valid and password valid">
 <kw name="Given Login page is open" library="login">
 <kw name="Open Browser" library="browser">
@@ -14,8 +14,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220320 09:32:05.690" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x03E0C508&gt;</msg>
-<status status="PASS" starttime="20220320 09:32:05.690" endtime="20220320 09:32:05.690"></status>
+<msg timestamp="20220325 05:55:14.660" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x047C8298&gt;</msg>
+<status status="PASS" starttime="20220325 05:55:14.659" endtime="20220325 05:55:14.660"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -24,7 +24,7 @@
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:05.690" endtime="20220320 09:32:05.691"></status>
+<status status="PASS" starttime="20220325 05:55:14.660" endtime="20220325 05:55:14.660"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -33,7 +33,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:05.691" endtime="20220320 09:32:05.691"></status>
+<status status="PASS" starttime="20220325 05:55:14.660" endtime="20220325 05:55:14.660"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -42,7 +42,7 @@
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:05.691" endtime="20220320 09:32:05.692"></status>
+<status status="PASS" starttime="20220325 05:55:14.660" endtime="20220325 05:55:14.661"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -51,7 +51,7 @@
 <arg>add_argument</arg>
 <arg>--window-size\=1366,768</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:05.692" endtime="20220320 09:32:05.692"></status>
+<status status="PASS" starttime="20220325 05:55:14.661" endtime="20220325 05:55:14.661"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -60,7 +60,7 @@
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:05.692" endtime="20220320 09:32:05.692"></status>
+<status status="PASS" starttime="20220325 05:55:14.661" endtime="20220325 05:55:14.661"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -68,22 +68,22 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:05.693" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220320 09:32:05.692" endtime="20220320 09:32:06.831"></status>
+<msg timestamp="20220325 05:55:14.661" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220325 05:55:14.661" endtime="20220325 05:55:15.806"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:05.690" endtime="20220320 09:32:06.831"></status>
+<status status="PASS" starttime="20220325 05:55:14.659" endtime="20220325 05:55:15.807"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${chrome_browser}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:06.832" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/login'</msg>
-<status status="PASS" starttime="20220320 09:32:06.832" endtime="20220320 09:32:11.094"></status>
+<msg timestamp="20220325 05:55:15.808" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/login'</msg>
+<status status="PASS" starttime="20220325 05:55:15.807" endtime="20220325 05:55:19.998"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:05.689" endtime="20220320 09:32:11.095"></status>
+<status status="PASS" starttime="20220325 05:55:14.659" endtime="20220325 05:55:19.998"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:05.689" endtime="20220320 09:32:11.095"></status>
+<status status="PASS" starttime="20220325 05:55:14.659" endtime="20220325 05:55:19.999"></status>
 </kw>
 <kw name="And Input Valid Username" library="login">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -92,10 +92,10 @@
 <arg>${username}</arg>
 <arg>${adm_usr}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:11.096" level="INFO">Typing text 'ptm15@madrasah.kemenag.go.id' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20220320 09:32:11.095" endtime="20220320 09:32:11.193"></status>
+<msg timestamp="20220325 05:55:20.000" level="INFO">Typing text 'ptm15@madrasah.kemenag.go.id' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220325 05:55:20.000" endtime="20220325 05:55:20.097"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:11.095" endtime="20220320 09:32:11.193"></status>
+<status status="PASS" starttime="20220325 05:55:19.999" endtime="20220325 05:55:20.098"></status>
 </kw>
 <kw name="And Input Valid Password" library="login">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -104,10 +104,10 @@
 <arg>${pwd}</arg>
 <arg>${adm_pwd}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:11.194" level="INFO">Typing text 'User@madrasah2022' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220320 09:32:11.193" endtime="20220320 09:32:11.273"></status>
+<msg timestamp="20220325 05:55:20.098" level="INFO">Typing text 'User@madrasah2022' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220325 05:55:20.098" endtime="20220325 05:55:20.175"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:11.193" endtime="20220320 09:32:11.273"></status>
+<status status="PASS" starttime="20220325 05:55:20.098" endtime="20220325 05:55:20.176"></status>
 </kw>
 <kw name="When Click button submit" library="login">
 <kw name="Execute Javascript" library="SeleniumLibrary">
@@ -117,12 +117,12 @@
 <arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
 <arg>snapshotItem(0).click();</arg>
 </arguments>
-<msg timestamp="20220320 09:32:11.274" level="INFO">Executing JavaScript:
+<msg timestamp="20220325 05:55:20.177" level="INFO">Executing JavaScript:
 document.evaluate("//button[@class='btn']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
 Without any arguments.</msg>
-<status status="PASS" starttime="20220320 09:32:11.273" endtime="20220320 09:32:11.281"></status>
+<status status="PASS" starttime="20220325 05:55:20.176" endtime="20220325 05:55:20.185"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:11.273" endtime="20220320 09:32:11.282"></status>
+<status status="PASS" starttime="20220325 05:55:20.176" endtime="20220325 05:55:20.186"></status>
 </kw>
 <kw name="Then Verify Home Page is open" library="login">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -131,393 +131,329 @@ Without any arguments.</msg>
 <arg>${Verify_Home_Admin}</arg>
 <arg>timeout=30s</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:11.282" endtime="20220320 09:32:13.593"></status>
+<status status="PASS" starttime="20220325 05:55:20.186" endtime="20220325 05:55:22.274"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${Verify_Home_Admin}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:13.599" level="INFO">Current page contains element '//span[text()='User Administrator']'.</msg>
-<status status="PASS" starttime="20220320 09:32:13.593" endtime="20220320 09:32:13.599"></status>
+<msg timestamp="20220325 05:55:22.280" level="INFO">Current page contains element '//span[text()='User Administrator']'.</msg>
+<status status="PASS" starttime="20220325 05:55:22.274" endtime="20220325 05:55:22.280"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:11.282" endtime="20220320 09:32:13.599"></status>
+<status status="PASS" starttime="20220325 05:55:20.186" endtime="20220325 05:55:22.280"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:05.689" endtime="20220320 09:32:13.599"></status>
+<status status="PASS" starttime="20220325 05:55:14.658" endtime="20220325 05:55:22.280"></status>
 </kw>
-<kw name="Scenario 2: User mengklik menu konfigurasi">
-<kw name="Click Menu Konfigurasi" library="konfigurasi">
+<kw name="Scenario 2: User mengklik sidebar menu Event">
+<kw name="Click Menu Event" library="event">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
-<arg>${menuKonfigurasi}</arg>
+<arg>${menuEvent}</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:13.600" endtime="20220320 09:32:14.712"></status>
+<status status="PASS" starttime="20220325 05:55:22.281" endtime="20220325 05:55:22.956"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${menuKonfigurasi}</arg>
+<arg>${menuEvent}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:14.713" level="INFO">Clicking element '//a[contains(.,'Konfigurasi')]'.</msg>
-<status status="PASS" starttime="20220320 09:32:14.712" endtime="20220320 09:32:14.751"></status>
+<msg timestamp="20220325 05:55:22.957" level="INFO">Clicking element '//a[contains(.,'Event')]'.</msg>
+<status status="PASS" starttime="20220325 05:55:22.956" endtime="20220325 05:55:22.994"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:13.600" endtime="20220320 09:32:14.751"></status>
+<status status="PASS" starttime="20220325 05:55:22.281" endtime="20220325 05:55:22.994"></status>
 </kw>
-<kw name="Verify Page Konfigurasi" library="konfigurasi">
+<kw name="Verify Page Event" library="event">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
-<arg>${verifyPengguna}</arg>
+<arg>${verifyEvent}</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:14.752" endtime="20220320 09:32:16.192"></status>
+<status status="PASS" starttime="20220325 05:55:22.995" endtime="20220325 05:55:23.872"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${verifyPengguna}</arg>
+<arg>${verifyEvent}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:16.198" level="INFO">Current page contains element '//label[text()='Pengguna']'.</msg>
-<status status="PASS" starttime="20220320 09:32:16.192" endtime="20220320 09:32:16.198"></status>
+<msg timestamp="20220325 05:55:23.878" level="INFO">Current page contains element '//label[@class='title-header']'.</msg>
+<status status="PASS" starttime="20220325 05:55:23.872" endtime="20220325 05:55:23.878"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:14.751" endtime="20220320 09:32:16.198"></status>
+<status status="PASS" starttime="20220325 05:55:22.994" endtime="20220325 05:55:23.878"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:13.600" endtime="20220320 09:32:16.198"></status>
+<status status="PASS" starttime="20220325 05:55:22.280" endtime="20220325 05:55:23.878"></status>
 </kw>
-<kw name="Scenario 3: User mengklik button tambah pengguna">
-<kw name="Click Button Tambah Pengguna" library="konfigurasi">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${tambahPengguna}</arg>
-</arguments>
-<status status="PASS" starttime="20220320 09:32:16.199" endtime="20220320 09:32:16.217"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${tambahPengguna}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:16.217" level="INFO">Clicking element '//button[text()='Tambah Pengguna']'.</msg>
-<status status="PASS" starttime="20220320 09:32:16.217" endtime="20220320 09:32:16.271"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:16.199" endtime="20220320 09:32:16.271"></status>
-</kw>
-<kw name="Verify Page Tambah Pengguna" library="konfigurasi">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${verifyTambahPengguna}</arg>
-</arguments>
-<status status="PASS" starttime="20220320 09:32:16.271" endtime="20220320 09:32:17.874"></status>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${verifyTambahPengguna}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:17.881" level="INFO">Current page contains element '//label[text()='Tambah Pengguna']'.</msg>
-<status status="PASS" starttime="20220320 09:32:17.874" endtime="20220320 09:32:17.881"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:16.271" endtime="20220320 09:32:17.881"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:16.198" endtime="20220320 09:32:17.881"></status>
-</kw>
-<kw name="Scenario 4: User menambahkan pengguna dengan role staff">
-<kw name="Input Nama Depan" library="konfigurasi">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>4</arg>
-<arg>0123456789</arg>
-</arguments>
-<assign>
-<var>${numbers}</var>
-</assign>
-<msg timestamp="20220320 09:32:17.882" level="INFO">${numbers} = 3060</msg>
-<status status="PASS" starttime="20220320 09:32:17.882" endtime="20220320 09:32:17.882"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${inputNamaDepan}</arg>
-<arg>test${numbers}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:17.883" level="INFO">Typing text 'test3060' into text field '//input[@placeholder='Nama Depan']'.</msg>
-<status status="PASS" starttime="20220320 09:32:17.882" endtime="20220320 09:32:17.965"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:17.882" endtime="20220320 09:32:17.965"></status>
-</kw>
-<kw name="Input Nama Belakang" library="konfigurasi">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>4</arg>
-<arg>0123456789</arg>
-</arguments>
-<assign>
-<var>${numbers}</var>
-</assign>
-<msg timestamp="20220320 09:32:17.966" level="INFO">${numbers} = 4081</msg>
-<status status="PASS" starttime="20220320 09:32:17.966" endtime="20220320 09:32:17.966"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${inputNamaBelakang}</arg>
-<arg>auto${numbers}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:17.966" level="INFO">Typing text 'auto4081' into text field '//input[@placeholder='Nama Belakang']'.</msg>
-<status status="PASS" starttime="20220320 09:32:17.966" endtime="20220320 09:32:18.082"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:17.965" endtime="20220320 09:32:18.082"></status>
-</kw>
-<kw name="input Email" library="konfigurasi">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>4</arg>
-<arg>0123456789</arg>
-</arguments>
-<assign>
-<var>${numbers}</var>
-</assign>
-<msg timestamp="20220320 09:32:18.083" level="INFO">${numbers} = 9850</msg>
-<status status="PASS" starttime="20220320 09:32:18.082" endtime="20220320 09:32:18.083"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${email}</arg>
-<arg>automation${numbers}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.083" level="INFO">Typing text 'automation9850' into text field '//input[@placeholder='Masukan alamat email']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.083" endtime="20220320 09:32:18.170"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.082" endtime="20220320 09:32:18.170"></status>
-</kw>
-<kw name="Click Tambah Role" library="konfigurasi">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnTambahRole}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.171" level="INFO">Clicking element '//button[text()=' Tambah Role ']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.171" endtime="20220320 09:32:18.225"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.170" endtime="20220320 09:32:18.225"></status>
-</kw>
-<kw name="Select Role" library="konfigurasi">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${roleStaff}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.226" level="INFO">Clicking element '//label[text()='Staff']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.225" endtime="20220320 09:32:18.271"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.225" endtime="20220320 09:32:18.272"></status>
-</kw>
-<kw name="Click Ubah Photo" library="konfigurasi">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnUbahPhoto}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.273" level="INFO">Clicking element '//label[text()='Ubah Photo']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.272" endtime="20220320 09:32:18.350"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.272" endtime="20220320 09:32:18.350"></status>
-</kw>
-<kw name="Select Image" library="konfigurasi">
-<kw name="Choose File" library="SeleniumLibrary">
-<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
-<arguments>
-<arg>${inputPhoto}</arg>
-<arg>D://Image/testing.jpg</arg>
-</arguments>
-<status status="PASS" starttime="20220320 09:32:18.351" endtime="20220320 09:32:18.391"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.350" endtime="20220320 09:32:18.391"></status>
-</kw>
-<kw name="Click Simpan Upload Photo" library="konfigurasi">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnSimpanUploadPhoto}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.391" level="INFO">Clicking element '//button[@class='btn btn-primary']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.391" endtime="20220320 09:32:18.435"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.391" endtime="20220320 09:32:18.436"></status>
-</kw>
-<kw name="Click Button Simpan Tambah Pengguna" library="konfigurasi">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
-<arg>document.evaluate("${btnSimpanPengguna}",</arg>
-<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
-<arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.438" level="INFO">Executing JavaScript:
-document.evaluate("//button[@class='btn']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
-Without any arguments.</msg>
-<status status="PASS" starttime="20220320 09:32:18.437" endtime="20220320 09:32:18.442"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.436" endtime="20220320 09:32:18.443"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:17.882" endtime="20220320 09:32:18.443"></status>
-</kw>
-<kw name="Scenario 5: User mengklik Batal dari page tambah pengguna">
-<kw name="Click Button Batal Tambah Pengguna" library="konfigurasi">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${btnBatalPengguna}</arg>
-</arguments>
-<status status="PASS" starttime="20220320 09:32:18.443" endtime="20220320 09:32:18.464"></status>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
-<arg>document.evaluate("${btnBatalPengguna}",</arg>
-<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
-<arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.465" level="INFO">Executing JavaScript:
-document.evaluate("//button[text()='Batal']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
-Without any arguments.</msg>
-<status status="PASS" starttime="20220320 09:32:18.464" endtime="20220320 09:32:18.493"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.443" endtime="20220320 09:32:18.494"></status>
-</kw>
-<kw name="Verify Page Konfigurasi" library="konfigurasi">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${verifyPengguna}</arg>
-</arguments>
-<status status="PASS" starttime="20220320 09:32:18.494" endtime="20220320 09:32:18.512"></status>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${verifyPengguna}</arg>
-</arguments>
-<msg timestamp="20220320 09:32:18.530" level="INFO">Current page contains element '//label[text()='Pengguna']'.</msg>
-<status status="PASS" starttime="20220320 09:32:18.512" endtime="20220320 09:32:18.531"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.494" endtime="20220320 09:32:18.531"></status>
-</kw>
-<status status="PASS" starttime="20220320 09:32:18.443" endtime="20220320 09:32:18.531"></status>
-</kw>
-<kw name="Scenario 6: User Search Pencarian by Nama Lengkap">
-<kw name="Search Pencarian by Nama Lengkap" library="konfigurasi">
+<kw name="Scenario 3: User melakukan pencarian dengan data tidak sesuai">
+<kw name="Search Pencarian No Data" library="event">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${inputCari}</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:18.532" endtime="20220320 09:32:19.243"></status>
+<status status="PASS" starttime="20220325 05:55:23.879" endtime="20220325 05:55:24.762"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>${inputCari}</arg>
-<arg>Abiratno</arg>
+<arg>testing123</arg>
 </arguments>
-<msg timestamp="20220320 09:32:19.243" level="INFO">Typing text 'Abiratno' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220320 09:32:19.243" endtime="20220320 09:32:19.315"></status>
+<msg timestamp="20220325 05:55:24.763" level="INFO">Typing text 'testing123' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
+<status status="PASS" starttime="20220325 05:55:24.762" endtime="20220325 05:55:24.841"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:18.531" endtime="20220320 09:32:19.315"></status>
+<status status="PASS" starttime="20220325 05:55:23.879" endtime="20220325 05:55:24.841"></status>
 </kw>
-<kw name="Click Button Cari" library="konfigurasi">
+<kw name="Click Button Cari" library="event">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${btnCari}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:19.316" level="INFO">Clicking element '//button[text()='Cari']'.</msg>
-<status status="PASS" starttime="20220320 09:32:19.316" endtime="20220320 09:32:19.353"></status>
+<msg timestamp="20220325 05:55:24.842" level="INFO">Clicking element '//button[text()='Cari']'.</msg>
+<status status="PASS" starttime="20220325 05:55:24.842" endtime="20220325 05:55:24.883"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:19.315" endtime="20220320 09:32:19.353"></status>
+<status status="PASS" starttime="20220325 05:55:24.841" endtime="20220325 05:55:24.883"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:18.531" endtime="20220320 09:32:19.353"></status>
+<kw name="Verify No Data" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${noData}</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:24.883" endtime="20220325 05:55:25.120"></status>
 </kw>
-<kw name="Scenario 7: User Search Pencarian by Email">
-<kw name="Search Pencarian by Email" library="konfigurasi">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${noData}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:25.126" level="INFO">Current page contains element '//td[text()='No data!']'.</msg>
+<status status="PASS" starttime="20220325 05:55:25.120" endtime="20220325 05:55:25.126"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:24.883" endtime="20220325 05:55:25.126"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:23.879" endtime="20220325 05:55:25.127"></status>
+</kw>
+<kw name="Scenario 4: User melakukan pencarian data by nama kegiatan">
+<kw name="Search Pencarian by Nama Kegiatan" library="event">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
-<arg>http://pmrms.greatpmo.com/configuration/list</arg>
+<arg>http://pmrms.greatpmo.com/activity/event</arg>
 </arguments>
-<msg timestamp="20220320 09:32:19.355" level="INFO">Opening url 'http://pmrms.greatpmo.com/configuration/list'</msg>
-<status status="PASS" starttime="20220320 09:32:19.354" endtime="20220320 09:32:19.742"></status>
+<msg timestamp="20220325 05:55:25.128" level="INFO">Opening url 'http://pmrms.greatpmo.com/activity/event'</msg>
+<status status="PASS" starttime="20220325 05:55:25.127" endtime="20220325 05:55:25.779"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${inputCari}</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:19.742" endtime="20220320 09:32:20.486"></status>
+<status status="PASS" starttime="20220325 05:55:25.779" endtime="20220325 05:55:27.893"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>${inputCari}</arg>
-<arg>ptm18@madrasah.kemenag.go.id</arg>
+<arg>Kegiatan baru 1</arg>
 </arguments>
-<msg timestamp="20220320 09:32:20.487" level="INFO">Typing text 'ptm18@madrasah.kemenag.go.id' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220320 09:32:20.486" endtime="20220320 09:32:20.583"></status>
+<msg timestamp="20220325 05:55:27.894" level="INFO">Typing text 'Kegiatan baru 1' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
+<status status="PASS" starttime="20220325 05:55:27.893" endtime="20220325 05:55:27.990"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:19.354" endtime="20220320 09:32:20.583"></status>
+<status status="PASS" starttime="20220325 05:55:25.127" endtime="20220325 05:55:27.990"></status>
 </kw>
-<kw name="Click Button Cari" library="konfigurasi">
+<kw name="Click Button Cari" library="event">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${btnCari}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:20.584" level="INFO">Clicking element '//button[text()='Cari']'.</msg>
-<status status="PASS" starttime="20220320 09:32:20.584" endtime="20220320 09:32:20.624"></status>
+<msg timestamp="20220325 05:55:27.991" level="INFO">Clicking element '//button[text()='Cari']'.</msg>
+<status status="PASS" starttime="20220325 05:55:27.991" endtime="20220325 05:55:28.030"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:20.583" endtime="20220320 09:32:20.624"></status>
+<status status="PASS" starttime="20220325 05:55:27.990" endtime="20220325 05:55:28.031"></status>
 </kw>
-<kw name="Verify Email" library="konfigurasi">
+<kw name="Verify Nama Kegiatan" library="event">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
-<arg>${verifyEmail}</arg>
+<arg>${verifyNamaEvent}</arg>
 </arguments>
-<status status="PASS" starttime="20220320 09:32:20.625" endtime="20220320 09:32:20.652"></status>
+<status status="PASS" starttime="20220325 05:55:28.031" endtime="20220325 05:55:28.074"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${verifyEmail}</arg>
+<arg>${verifyNamaEvent}</arg>
 </arguments>
-<msg timestamp="20220320 09:32:20.658" level="INFO">Current page contains element '//td[text()='ptm18@madrasah.kemenag.go.id']'.</msg>
-<status status="PASS" starttime="20220320 09:32:20.652" endtime="20220320 09:32:20.658"></status>
+<msg timestamp="20220325 05:55:28.080" level="INFO">Current page contains element '//td[text()='Kegiatan baru 1']'.</msg>
+<status status="PASS" starttime="20220325 05:55:28.074" endtime="20220325 05:55:28.080"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:20.624" endtime="20220320 09:32:20.659"></status>
+<status status="PASS" starttime="20220325 05:55:28.031" endtime="20220325 05:55:28.080"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:19.354" endtime="20220320 09:32:20.659"></status>
+<status status="PASS" starttime="20220325 05:55:25.127" endtime="20220325 05:55:28.080"></status>
+</kw>
+<kw name="Scenario 5: User Mengklik Lihat Detail Event">
+<kw name="Click Button Lihat Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lihatDetail}</arg>
+<arg>timeout=30s</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:28.081" endtime="20220325 05:55:28.100"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lihatDetail}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:28.101" level="INFO">Clicking element '//button[text()='Lihat']'.</msg>
+<status status="PASS" starttime="20220325 05:55:28.100" endtime="20220325 05:55:28.155"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.081" endtime="20220325 05:55:28.155"></status>
+</kw>
+<kw name="Verify Page Detail Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verifyDetail}</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:28.156" endtime="20220325 05:55:28.900"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${verifyDetail}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:28.907" level="INFO">Current page contains element '//label[@class='font-size-20 mt-2']'.</msg>
+<status status="PASS" starttime="20220325 05:55:28.900" endtime="20220325 05:55:28.907"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.156" endtime="20220325 05:55:28.907"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.080" endtime="20220325 05:55:28.907"></status>
+</kw>
+<kw name="Scenario 6: User Mengklik Button kembali dari page detail event">
+<kw name="Click Button Kembali" library="event">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btnKembali}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:28.908" level="INFO">Clicking element '//label[text()='Kembali']'.</msg>
+<status status="PASS" starttime="20220325 05:55:28.908" endtime="20220325 05:55:28.981"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.908" endtime="20220325 05:55:28.982"></status>
+</kw>
+<kw name="Verify Page Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verifyEvent}</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:28.982" endtime="20220325 05:55:28.998"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${verifyEvent}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:29.004" level="INFO">Current page contains element '//label[@class='title-header']'.</msg>
+<status status="PASS" starttime="20220325 05:55:28.998" endtime="20220325 05:55:29.004"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.982" endtime="20220325 05:55:29.005"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:28.908" endtime="20220325 05:55:29.005"></status>
+</kw>
+<kw name="Scenario 7: User Mnegklik Button Keluar dari page detail event">
+<kw name="Click Button Lihat Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lihatDetail}</arg>
+<arg>timeout=30s</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:29.006" endtime="20220325 05:55:29.730"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lihatDetail}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:29.731" level="INFO">Clicking element '//button[text()='Lihat']'.</msg>
+<status status="PASS" starttime="20220325 05:55:29.730" endtime="20220325 05:55:29.811"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:29.005" endtime="20220325 05:55:29.812"></status>
+</kw>
+<kw name="Verify Page Detail Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verifyDetail}</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:29.812" endtime="20220325 05:55:30.521"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${verifyDetail}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:30.530" level="INFO">Current page contains element '//label[@class='font-size-20 mt-2']'.</msg>
+<status status="PASS" starttime="20220325 05:55:30.522" endtime="20220325 05:55:30.530"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:29.812" endtime="20220325 05:55:30.530"></status>
+</kw>
+<kw name="Click Button Keluar" library="event">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.evaluate("${btnKeluar}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+</arguments>
+<msg timestamp="20220325 05:55:30.532" level="INFO">Executing JavaScript:
+document.evaluate("//button[text()='Keluar']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220325 05:55:30.531" endtime="20220325 05:55:30.568"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:30.531" endtime="20220325 05:55:30.568"></status>
+</kw>
+<kw name="Verify Page Event" library="event">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verifyEvent}</arg>
+</arguments>
+<status status="PASS" starttime="20220325 05:55:30.568" endtime="20220325 05:55:30.586"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${verifyEvent}</arg>
+</arguments>
+<msg timestamp="20220325 05:55:30.593" level="INFO">Current page contains element '//label[@class='title-header']'.</msg>
+<status status="PASS" starttime="20220325 05:55:30.587" endtime="20220325 05:55:30.593"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:30.568" endtime="20220325 05:55:30.593"></status>
+</kw>
+<status status="PASS" starttime="20220325 05:55:29.005" endtime="20220325 05:55:30.593"></status>
 </kw>
 <kw name="Finish Testcase" library="browser" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220320 09:32:20.659" endtime="20220320 09:32:22.861"></status>
+<status status="PASS" starttime="20220325 05:55:30.594" endtime="20220325 05:55:32.830"></status>
 </kw>
-<status status="PASS" starttime="20220320 09:32:20.659" endtime="20220320 09:32:22.862"></status>
+<status status="PASS" starttime="20220325 05:55:30.593" endtime="20220325 05:55:32.830"></status>
 </kw>
-<doc>Regression Menu Konfigurasi Pengguna</doc>
+<doc>Regression Menu Event</doc>
 <tags>
 <tag>Functionality</tag>
 </tags>
-<status status="PASS" starttime="20220320 09:32:05.688" endtime="20220320 09:32:22.863" critical="yes"></status>
+<status status="PASS" starttime="20220325 05:55:14.657" endtime="20220325 05:55:32.831" critical="yes"></status>
 </test>
-<doc>Regression Test Konfigurasi Pengguna</doc>
-<status status="PASS" starttime="20220320 09:32:05.483" endtime="20220320 09:32:22.867"></status>
+<doc>Regression Test Menu Event</doc>
+<status status="PASS" starttime="20220325 05:55:14.453" endtime="20220325 05:55:32.836"></status>
 </suite>
 <statistics>
 <total>
@@ -528,7 +464,7 @@ Without any arguments.</msg>
 <stat pass="1" fail="0">Functionality</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="08 Konfigurasi">08 Konfigurasi</stat>
+<stat pass="1" fail="0" id="s1" name="16 Event">16 Event</stat>
 </suite>
 </statistics>
 <errors>
