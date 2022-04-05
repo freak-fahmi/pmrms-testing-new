@@ -9,20 +9,23 @@ Click Menu AWP
     Wait Until Element Is Visible    ${menuAwp}     timeout=30s
     Click Element    ${menuAwp}
 Verify Page AWP
-    Wait Until Element Is Visible    ${verifyAwp}
+    Wait Until Element Is Visible    ${verifyAwp}  timeout=30s
     Page Should Contain Element    ${verifyAwp}
 Input Search by Nama kegiatan AWP
     Wait Until Element Is Visible    ${searchAwp}
-    Input Text      ${searchAwp}    Penyusunan Modul Pustakawan
+    Input Text      ${searchAwp}    Automation
 Input Search by Pagu Anggaran AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
     Wait Until Element Is Visible    ${searchAwp}
     Input Text      ${searchAwp}    200
 Click Detail Awp
     Wait Until Element Is Visible    ${detailAwp}   timeout=30s
-    Click Element    ${detailAwp}
+#    Click Element    ${detailAwp}
+    Execute JavaScript              document.evaluate("${detailAwp}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
 Verify Detail Awp
-    Wait Until Element Is Visible    ${verifyDetailAwp}
+    Wait Until Element Is Visible    ${verifyDetailAwp}     timeout=30s
     Page Should Contain Element    ${verifyDetailAwp}
 Input Search by Komponen AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
@@ -95,9 +98,12 @@ Input Data Umum
                                     ...    snapshotItem(0).click();
 #    Click Element    ${btnLanjut}
 Input Data Kegiatan
+    Click Element    ${TujuanKegiatan} 
     Input Text    ${TujuanKegiatan}     Automation Testing
     Input Text    ${descKegiatan}       Automation Testing
-    Click Element    ${radioPenyedia}
+    Execute JavaScript              document.evaluate("${radioPenyedia}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
     Input Text    ${tglMulai}       2022-03-17
     Input Text    ${tglAkhir}       2022-04-17
     Input Text    ${infoLainnya}    Automation Testing
@@ -114,6 +120,8 @@ Input Data Pelaksanaan 1
     Click Element    ${clickAceh}
     Wait Until Element Is Visible    ${pilihkabkota}    timeout=30s
     Click Element    ${pilihkabkota}
+    Click Element    ${combobox}
+    Wait Until Element Is Visible    ${clickAcehBarat}  timeout=30s
     Click Element    ${clickAcehBarat}
     Click Element    ${btnSimpanPopup}
     Input Text    ${volumeEvent}    200
@@ -130,9 +138,17 @@ Input Data Pelaksanaan 2
     Input Text    ${jmlPeserta}     500
     Input Text    ${pesertaLainnya}     fahmi
     Input Text    ${outputKegiatan}     Automation Testing
-    Click Element    ${btnPDOI}
-    Click Element    ${pilihPDOI}
-    Click Element    ${btnPDOI}
+    Execute JavaScript              document.evaluate("${btnPDOI}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${pilihPDOI}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${pilihPDOI}
+    Execute JavaScript              document.evaluate("${btnPDOI}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${btnPDOI}
     Sleep    3s
     Execute JavaScript              document.evaluate("${kontribusiIRI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).

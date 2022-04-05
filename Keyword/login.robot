@@ -22,6 +22,12 @@ Input Text Kosong
     Sleep    5s
 Input Valid Username
     input text                      ${username}     ${adm_usr}
+Input Username Consultant
+    input text                      ${username}     ptm37@madrasah.kemenag.go.id
+Input Username Koordinator
+    input text                      ${username}     ptm34@madrasah.kemenag.go.id
+Input Username PMU
+    input text                      ${username}     ptm16@madrasah.kemenag.go.id
 Input Valid Username role komponen 4
     input text                      ${username}     ${usr_role4}
 Input Valid Username staff administrasi

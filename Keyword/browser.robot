@@ -12,6 +12,8 @@ Finish Testcase
     close browser
 Start Testcase Headless
     ${options}    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()
+    Call Method    ${options}    add_argument    --ignore-certificate-errors
+    Call Method    ${options}    add_argument    --ignore-ssl-errors
     Call Method    ${options}    add_argument    --disable-notifications
     Call Method    ${options}    add_argument    --no-sandbox
     call method    ${options}    add_argument    --disable-gpu
