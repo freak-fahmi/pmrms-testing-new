@@ -5,7 +5,7 @@ Resource    ../Keyword/browser.robot
 Resource    ../Keyword/login.robot
 
 #Test Setup  Open Browser
-#Test Teardown   Finish Testcase
+Test Teardown   Finish Testcase
 
 *** Variables ***
 

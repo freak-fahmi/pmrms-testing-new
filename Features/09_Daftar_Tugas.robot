@@ -23,8 +23,8 @@ Menu Daftar Tugas
     Scenario 6: User Mengklik Button Kembali dari page detail tugas
 #    Scenario 7: User Mengklik Button Simpan dari Detail Tugas
 #    Scenario 8: User Mengklik Button Batal dari detail tugas
-    Scenario 9: User Mengklik Lihat Tugas Pada Tab Penugasan Saya
-    Scenario 10: User Mengklik Button Kembali dari detail tugas penugasan
+#    Scenario 9: User Mengklik Lihat Tugas Pada Tab Penugasan Saya
+#    Scenario 10: User Mengklik Button Kembali dari detail tugas penugasan
 #    Scenario 11. User Mengklik Button Edit Lalu Simpan
     Scenario 12: User Mengklik Tab Penugasan lalu buat tugas
 #    Scenario 13: User Menginput Tambah Tugas Lalu klik Simpan

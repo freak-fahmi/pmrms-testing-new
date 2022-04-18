@@ -1,5 +1,5 @@
 *** Variables ***
-${menuEvent}                  //a[contains(.,'Event')]
+${menuEvent}                  //a[@href='/activity/event']
 ${verifyEvent}               //label[@class='title-header']
 ${inputCari}                 //input[contains(@class,'form-control ng-untouched')]
 ${btnCari}                   //button[text()='Cari']
@@ -9,3 +9,11 @@ ${btnKembali}               //label[text()='Kembali']
 ${noData}                    //td[text()='No data!']
 ${verifyDetail}             //label[@class='font-size-20 mt-2']
 ${btnKeluar}                //button[text()='Keluar']
+${kalender}                 //span[text()='Kalender Event']
+${verifyJadwal}             //label[text()='JADWAL']
+${laporanEvent}             //span[text()='Laporan Event']
+${btnLaporanEvent}          //button[.='Laporan Event']
+${verifyDetailLaporanEvent}     css= .font-size-20
+${btnHistory}               //label[text()='History']
+${verifyHistoryCatatan}     //h5[text()='History Catatan']
+${btnClose}                //button[@class='btn-close']

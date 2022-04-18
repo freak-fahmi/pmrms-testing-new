@@ -58,7 +58,7 @@ Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Input Data Pelaksanaan
     Click Button Simpan
 Scenario 7: User Mengklik Button Keluar dari detail kegiatan
-    Click Button keluar
+    Click Button Kembali
 Scenario 8: User Mengklik Lihat Detail kegiatan
     Click Button Lihat Kegiatan
 #    Verify Page Detail Kegiatan

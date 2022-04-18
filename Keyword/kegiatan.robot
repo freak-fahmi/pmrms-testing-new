@@ -70,7 +70,10 @@ Click Button Kembali
                                     ...    snapshotItem(0).click();
 Click Button Implementasi Kegiatan
     Wait Until Element Is Visible    ${btnImplementasiKegiatan}     timeout=30s
-    Click Element    ${btnImplementasiKegiatan}
+    Execute JavaScript              document.evaluate("${btnImplementasiKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${btnImplementasiKegiatan}
 Input Data Umum
     Wait Until Element Is Visible    ${radioAdaPOK}     timeout=30s
     Execute JavaScript              document.evaluate("${radioAdaPOK}",

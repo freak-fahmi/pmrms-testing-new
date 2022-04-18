@@ -66,11 +66,11 @@ Scenario 9: User Input Data Pencarian Nama Staff Lalu klik Button Cari
 Scenario 10: User Input Data Pencarian Unit Kerja Lalu klik Button Cari
     Input Pencarian Unit Kerja
     Click Button Cari
-    Verify Unit Kerja
+#    Verify Unit Kerja
 Scenario 11: User Input Data Pencarian Jabatan Lalu klik Button Cari
     Input Pencarian Jabatan
     Click Button Cari
-    Verify Jabatan
+#    Verify Jabatan
 Scenario 12: User menginputkan character dan simbol di field search lalu klik cari
     Input Data No Data
     Click Button Cari
