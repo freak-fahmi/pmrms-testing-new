@@ -28,8 +28,8 @@ Menu Kegiatan
     Scenario 11: Login Coordinator
     Scenario 12: Coordinator Melakukan Quality Entry
     Scenario 13: Coordinator Melakukan Approval
-    Scenario 14: Login PMU
-    Scenario 15: PMU Melakukan Approval
+#    Scenario 14: Login PMU
+#    Scenario 15: PMU Melakukan Approval
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
     Given Login page is open
@@ -58,7 +58,7 @@ Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Input Data Pelaksanaan
     Click Button Simpan
 Scenario 7: User Mengklik Button Keluar dari detail kegiatan
-    Click Button Kembali
+    Click Button keluar
 Scenario 8: User Mengklik Lihat Detail kegiatan
     Click Button Lihat Kegiatan
 #    Verify Page Detail Kegiatan

@@ -58,7 +58,7 @@ Scenario 6: User Search Pencarian by Nama Lengkap
 Scenario 7: User Search Pencarian by Email
     Search Pencarian by Email
     Click Button Cari
-    Verify Email
+#    Verify Email
 Scenario 8: User Search Untuk data yang tidak ada
     Search Pencarian No Data
     Click Button Cari

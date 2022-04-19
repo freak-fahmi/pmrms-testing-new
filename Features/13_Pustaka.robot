@@ -19,7 +19,7 @@ Menu Pustaka
     Scenario 2: User mengklik menu pustaka
     Scenario 3: User mengklik button upload file
     Scenario 4: User Mengklik button batal from page upload file
-    Scenario 5: User Input Data MoM, Upload File dan Save
+#    Scenario 5: User Input Data MoM, Upload File dan Save
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid

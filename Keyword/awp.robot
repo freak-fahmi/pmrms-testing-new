@@ -98,7 +98,11 @@ Input Data Umum
                                     ...    snapshotItem(0).click();
 #    Click Element    ${btnLanjut}
 Input Data Kegiatan
-    Click Element    ${TujuanKegiatan} 
+#    Execute JavaScript              document.evaluate("${TujuanKegiatan}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
+    Wait Until Element Is Visible    ${TujuanKegiatan}  timeout=30s
+    Click Element    ${TujuanKegiatan}
     Input Text    ${TujuanKegiatan}     Automation Testing
     Input Text    ${descKegiatan}       Automation Testing
     Execute JavaScript              document.evaluate("${radioPenyedia}",
