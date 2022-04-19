@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library    String
 Resource    ../Xpath/awp.robot
 
 *** Variables ***
@@ -71,6 +72,7 @@ Click Button Batal
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 Input Data Umum
+    ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${inputTahun}         2022
     Click Element    ${pilihKomponen}
     Click Element    ${clickKomponen}
@@ -91,26 +93,27 @@ Input Data Umum
                                     ...    snapshotItem(0).click();
 #    Click Element    ${clickSubsubcomponent}
 #    Click Element    ${pilihSubSubComponent}
-    Input Text    ${inputKegiatan}      Automation Testing
+    Input Text    ${inputKegiatan}      Automation Testing ${text}
     Input Text    ${inputBudget}        2000000
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 #    Click Element    ${btnLanjut}
 Input Data Kegiatan
+    ${text}=    Generate Random String      10      [LOWER]
 #    Execute JavaScript              document.evaluate("${TujuanKegiatan}",
 #                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
 #                                    ...    snapshotItem(0).click();
     Wait Until Element Is Visible    ${TujuanKegiatan}  timeout=30s
     Click Element    ${TujuanKegiatan}
-    Input Text    ${TujuanKegiatan}     Automation Testing
-    Input Text    ${descKegiatan}       Automation Testing
+    Input Text    ${TujuanKegiatan}     Automation Testing ${text}
+    Input Text    ${descKegiatan}       Automation Testing ${text}
     Execute JavaScript              document.evaluate("${radioPenyedia}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
     Input Text    ${tglMulai}       2022-03-17
     Input Text    ${tglAkhir}       2022-04-17
-    Input Text    ${infoLainnya}    Automation Testing
+    Input Text    ${infoLainnya}    Automation Testing ${text}
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
@@ -139,9 +142,10 @@ Input Data Pelaksanaan 1
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 Input Data Pelaksanaan 2
+    ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${jmlPeserta}     500
     Input Text    ${pesertaLainnya}     fahmi
-    Input Text    ${outputKegiatan}     Automation Testing
+    Input Text    ${outputKegiatan}     Automation Testing ${text}
     Execute JavaScript              document.evaluate("${btnPDOI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();

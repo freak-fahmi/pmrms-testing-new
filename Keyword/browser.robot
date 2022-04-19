@@ -19,6 +19,6 @@ Start Testcase Headless
     call method    ${options}    add_argument    --disable-gpu
 #    Call Method    ${options}    add_argument    --start-maximized
     Call Method    ${options}    add_argument    --window-size\=1366,768
-#    Call Method    ${options}    add_argument    --headless
+    Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Create WebDriver    Chrome    chrome_options=${options}
