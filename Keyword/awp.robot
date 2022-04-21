@@ -74,6 +74,8 @@ Click Button Batal
 Input Data Umum
     ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${inputTahun}         2022
+    Click Element    //label[text()='Komponen :']
+    Wait Until Element Is Visible    ${pilihKomponen}   timeout=10s
     Click Element    ${pilihKomponen}
     Click Element    ${clickKomponen}
     Click Element    ${clickKomponen}
@@ -82,18 +84,20 @@ Input Data Umum
     Click Element    ${clickSubComponent}
     Sleep    3s
 #    Click Element    ${pilihSubSubComponent}
-    Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
-                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-                                    ...    snapshotItem(0).click();
-    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
-                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-                                    ...    snapshotItem(0).click();
-    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
-                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-                                    ...    snapshotItem(0).click();
+#    Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
+#    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
+#    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
 #    Click Element    ${clickSubsubcomponent}
 #    Click Element    ${pilihSubSubComponent}
+    Input Text    ${inputSubComponent}    Automation Testing ${text}
     Input Text    ${inputKegiatan}      Automation Testing ${text}
+    Input Text    ${keteranganKegiatan}     Automation Testing
     Input Text    ${inputBudget}        2000000
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).

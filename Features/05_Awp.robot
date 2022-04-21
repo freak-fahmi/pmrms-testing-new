@@ -18,11 +18,11 @@ Menu AWP
     Scenario 1: Login with username valid and password valid
     #Sprint 6
     Scenario 2: User mengklik sidebar menu awp
-    Scenario 3: User mengklik button index page untuk melihat data selanjutnya
+#    Scenario 3: User mengklik button index page untuk melihat data selanjutnya
     Scenario 4: User mengklik field search input by Nama Kegiatan
     Scenario 5: User mengklik field search input by Pagu Anggaran Awp
-    Scenario 6: User Mengklik Detail Awp
-    Scenario 7: User Mengklik Button Kembali dari detail awp
+#    Scenario 6: User Mengklik Detail Awp
+#    Scenario 7: User Mengklik Button Kembali dari detail awp
     Scenario 8: User mengklik field search input by Komponen Awp
     Scenario 9: User menginputkan karakter dan angka tidak sesuai
     #Sprint6
@@ -48,7 +48,7 @@ Scenario 3: User mengklik button index page untuk melihat data selanjutnya
 Scenario 4: User mengklik field search input by Nama Kegiatan
     Input Search by Nama kegiatan AWP
     Click Button Cari
-    Verify Search AWP
+#    Verify Search AWP
 Scenario 5: User mengklik field search input by Pagu Anggaran Awp
     Input Search by Pagu Anggaran AWP
     Click Button Cari

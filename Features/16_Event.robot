@@ -19,14 +19,14 @@ Menu Event
     Scenario 2: User mengklik sidebar menu Event
     Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
-    Scenario 5: User Mengklik Lihat Detail Event
-    Scenario 6: User mengklik button Tab laporan event
-    Scenario 7: User Mengklik Detail Laporan Event
-    Scenario 8: User Mengklik History Pada Detail Laporan Event
-    Scenario 9: User Mengklik Button Kembali dari Page detail laporan Event
-    Scenario 10: User Mengklik Button kembali dari page detail event
-    Scenario 11: User Mnegklik Button Keluar dari page detail event
-    Scenario 12: User mengklik button kalender event
+#    Scenario 5: User Mengklik Lihat Detail Event
+#    Scenario 6: User mengklik button Tab laporan event
+#    Scenario 7: User Mengklik Detail Laporan Event
+#    Scenario 8: User Mengklik History Pada Detail Laporan Event
+#    Scenario 9: User Mengklik Button Kembali dari Page detail laporan Event
+#    Scenario 10: User Mengklik Button kembali dari page detail event
+#    Scenario 11: User Mnegklik Button Keluar dari page detail event
+#    Scenario 12: User mengklik button kalender event
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
