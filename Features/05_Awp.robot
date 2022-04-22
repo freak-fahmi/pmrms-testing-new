@@ -6,7 +6,7 @@ Resource    ../Keyword/awp.robot
 Resource    ../Keyword/login.robot
 
 #Test Setup  Open Browser
-Test Teardown   Finish Testcase
+#Test Teardown   Finish Testcase
 
 *** Variables ***
 
@@ -73,8 +73,8 @@ Scenario 10: User Mengklik Button Tambah AWP
 Scenario 11: User menginput data pada form lalu melakukan save
     Input Data Umum
     Input Data Kegiatan
-    Input Data Pelaksanaan 1
-    Input Data Pelaksanaan 2
+    Input Data Pelaksanaan
+    Input Data Peserta
 Scenario 12: User Mengklik Button Kembali dari page tambah awp
     Click Button Tambah AWP
     Verify Page Tambah AWP

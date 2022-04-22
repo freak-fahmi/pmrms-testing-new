@@ -80,50 +80,40 @@ Input Data Umum
     Click Element    ${clickKomponen}
     Click Element    ${clickKomponen}
     Click Element    ${pilihSubcomponent}
-    Click Element    ${clickSubComponent}
+    Wait Until Element Is Visible     ${clickSubComponent}  timeout=10s
     Click Element    ${clickSubComponent}
     Sleep    3s
-#    Click Element    ${pilihSubSubComponent}
-#    Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
-#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-#                                    ...    snapshotItem(0).click();
-#    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
-#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-#                                    ...    snapshotItem(0).click();
-#    Execute JavaScript              document.evaluate("${clickSubsubcomponent}",
-#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-#                                    ...    snapshotItem(0).click();
-#    Click Element    ${clickSubsubcomponent}
-#    Click Element    ${pilihSubSubComponent}
     Input Text    ${inputSubComponent}    Automation Testing ${text}
     Input Text    ${inputKegiatan}      Automation Testing ${text}
+    Wait Until Element Is Visible    ${modaKegiatan}
+    Execute JavaScript              document.evaluate("${modaKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
     Input Text    ${keteranganKegiatan}     Automation Testing
     Input Text    ${inputBudget}        2000000
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-#    Click Element    ${btnLanjut}
 Input Data Kegiatan
     ${text}=    Generate Random String      10      [LOWER]
-#    Execute JavaScript              document.evaluate("${TujuanKegiatan}",
-#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-#                                    ...    snapshotItem(0).click();
     Wait Until Element Is Visible    ${TujuanKegiatan}  timeout=30s
-    Click Element    ${TujuanKegiatan}
     Input Text    ${TujuanKegiatan}     Automation Testing ${text}
     Input Text    ${descKegiatan}       Automation Testing ${text}
     Execute JavaScript              document.evaluate("${radioPenyedia}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-    Input Text    ${tglMulai}       2022-03-17
-    Input Text    ${tglAkhir}       2022-04-17
-    Input Text    ${infoLainnya}    Automation Testing ${text}
+
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-Input Data Pelaksanaan 1
-    Click Element    ${tambahLokasi}
 
+Input Data Pelaksanaan
+    ${text}=    Generate Random String      10      [LOWER]
+    Input Text    ${volumeEvent}    200
+    Input Text    ${tglMulai}       2022-04-30
+    Input Text    ${tglAkhir}       2022-05-30
+    Input Text    ${infoLainnya}    Automation Testing ${text}
+    Click Element    ${tambahLokasi}
     Click Element    ${pilihProvinsi}
     Wait Until Element Is Visible    ${clickAceh}   timeout=30s
     Click Element    ${clickAceh}
@@ -135,7 +125,7 @@ Input Data Pelaksanaan 1
     Wait Until Element Is Visible    ${clickAcehBarat}  timeout=30s
     Click Element    ${clickAcehBarat}
     Click Element    ${btnSimpanPopup}
-    Input Text    ${volumeEvent}    200
+
     Click Element    ${jenisKegiatan}
     Click Element    ${pilihJenisKegiatan}
     Click Element    ${pilihJenisKegiatan}
@@ -145,10 +135,11 @@ Input Data Pelaksanaan 1
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-Input Data Pelaksanaan 2
+Input Data Peserta
     ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${jmlPeserta}     500
     Input Text    ${pesertaLainnya}     fahmi
+    Input Text    ${sasaranPeserta}     Automation Peserta
     Input Text    ${outputKegiatan}     Automation Testing ${text}
     Execute JavaScript              document.evaluate("${btnPDOI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
@@ -156,11 +147,9 @@ Input Data Pelaksanaan 2
     Execute JavaScript              document.evaluate("${pilihPDOI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-#    Click Element    ${pilihPDOI}
     Execute JavaScript              document.evaluate("${btnPDOI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-#    Click Element    ${btnPDOI}
     Sleep    3s
     Execute JavaScript              document.evaluate("${kontribusiIRI}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
