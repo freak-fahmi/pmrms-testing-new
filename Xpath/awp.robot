@@ -1,5 +1,5 @@
 *** Variables ***
-${menuAwp}             (//a[@id='topnav-components'])[2]
+${menuAwp}             //a[@href='/admin/awp']
 ${verifyAwp}           //label[text()='AWP']
 ${searchAwp}           //input[contains(@class,'form-control ng-untouched')]
 ${verifySearch}        //td[text()='Automation Testing']

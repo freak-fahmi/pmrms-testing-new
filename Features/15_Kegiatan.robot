@@ -24,12 +24,12 @@ Menu Kegiatan
     Scenario 7: User Mengklik Button Keluar dari detail kegiatan
     Scenario 8: User Mengklik Lihat Detail kegiatan
     Scenario 9: User Mengklik Button kembali dari page detail kegiatan
-    Scenario 10: Consultan Logout
+#    Scenario 10: Consultan Logout
     Scenario 11: Login Coordinator
     Scenario 12: Coordinator Melakukan Quality Entry
     Scenario 13: Coordinator Melakukan Approval
-#    Scenario 14: Login PMU
-#    Scenario 15: PMU Melakukan Approval
+    Scenario 14: Login PMU
+    Scenario 15: PMU Melakukan Approval
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
     Given Login page is open
@@ -42,11 +42,11 @@ Scenario 2: User mengklik sidebar menu kegiatan
     Verify Page Kegiatan
 Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Search Pencarian No Data
-    Click Button Cari
-    Verify No Data
+    Kegiatan.Click Button Cari
+    Kegiatan.Verify No Data
 Scenario 4: User melakukan pencarian data by nama kegiatan
     Search Pencarian by Nama Kegiatan
-    Click Button Cari
+    Kegiatan.Click Button Cari
 #    Verify Nama Kegiatan
 Scenario 5: User Mengklik Sorting Status
     Click Sorting Status
@@ -74,7 +74,7 @@ Scenario 11: Login Coordinator
     Click button submit
     Verify Home Page Penanggung Jawab is open
 Scenario 12: Coordinator Melakukan Quality Entry
-    Go To    http://pmrms.greatpmo.com/implement/kegiatan
+#    Go To    http://pmrms.greatpmo.com/implement/kegiatan
     Scenario 4: User melakukan pencarian data by nama kegiatan
     Scenario 5: User Mengklik Sorting Status
     Click Button Lihat Kegiatan Perencanaan
@@ -90,7 +90,7 @@ Scenario 14: Login PMU
     Click button submit
     Verify Home Page Penanggung Jawab is open
 Scenario 15: PMU Melakukan Approval
-    Go To    http://pmrms.greatpmo.com/implement/kegiatan
+#    Go To    http://pmrms.greatpmo.com/implement/kegiatan
     Scenario 4: User melakukan pencarian data by nama kegiatan
     Click Sorting Status Asc
     Click Button Lihat Menunggu Persetujuan

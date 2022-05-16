@@ -3,22 +3,23 @@ Library     SeleniumLibrary
 #Resource    ../Xpath/Login.robot
 #Resource    ../Keyword/browser.robot
 Resource    ../Xpath/kegiatan.robot
+#Resource    ../Keyword/awp.robot
 
 *** Variables ***
 
 *** Keywords ***
 Click Menu Kegiatan
-    Wait Until Element Is Visible    ${menuKegiatan}
+    Wait Until Element Is Visible    ${menuKegiatan}    timeout=30s
     Click Element    ${menuKegiatan}
 Verify Page Kegiatan
-    Wait Until Element Is Visible    ${verifyKegiatan}
+    Wait Until Element Is Visible    ${verifyKegiatan}      timeout=30s
     Page Should Contain Element      ${verifyKegiatan}
 Click Button Cari
     Click Element       ${btnCari}
 Search Pencarian by Nama Kegiatan
     Go To    http://pmrms.greatpmo.com/implement/kegiatan
-    Wait Until Element Is Visible    ${inputCari}
-    Input Text    ${inputCari}          Automation
+    Wait Until Element Is Visible    ${inputCari}       timeout=30s
+    Input Text    ${inputCari}          Automation Testing
 Verify Nama Kegiatan
     Wait Until Element Is Visible       ${verifyNamaKegiatan}
     Page Should Contain Element         ${verifyNamaKegiatan}
@@ -75,10 +76,16 @@ Click Button Implementasi Kegiatan
                                     ...    snapshotItem(0).click();
 #    Click Element    ${btnImplementasiKegiatan}
 Input Data Umum
-    Wait Until Element Is Visible    ${radioAdaPOK}     timeout=30s
-    Execute JavaScript              document.evaluate("${radioAdaPOK}",
+    Wait Until Element Is Visible    ${tbhKodePOK}      timeout=30s
+#    Click Element    ${tbhKodePOK}
+    Execute JavaScript              document.evaluate("${tbhKodePOK}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+    Wait Until Element Is Visible    ${pilihKodeAkun}       timeout=30s
+    Execute JavaScript              document.evaluate("${pilihKodeAkun}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Input Text    ${budgetPOK}      100000
 
 #    Click Element    ${btnLanjut}
     Execute JavaScript              document.evaluate("${btnLanjut}",

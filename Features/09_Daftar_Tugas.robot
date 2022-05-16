@@ -52,7 +52,7 @@ Scenario 4: User Melakukan pencarian di tab penugasan saya
 Scenario 5: User Mengklik Lihat Tugas Pada Tab Tugas Saya
     Go To    http://pmrms.greatpmo.com/task/list-task
     Click Buttton Lihat Tugas
-    Verify Detail Tugas
+#    Verify Detail Tugas
 Scenario 6: User Mengklik Button Kembali dari page detail tugas
     Click Button Kembali
     Verify Page Daftar Tugas

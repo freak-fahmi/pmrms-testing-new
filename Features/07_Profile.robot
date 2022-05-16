@@ -32,7 +32,7 @@ Scenario 1: Login with username valid and password valid
     And Input Valid Username
     And Input Valid Password
     When Click button submit
-    Then Verify Home Page is open
+#    Then Verify Home Page is open
 Scenario 2: User mengklik menu profil
     Click Menu Profile
     Click Button Profile

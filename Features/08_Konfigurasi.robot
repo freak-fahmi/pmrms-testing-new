@@ -16,7 +16,6 @@ Menu Konfigurasi
     [Documentation]  Regression Menu Konfigurasi Pengguna
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
-    #sprint 6
     Scenario 2: User mengklik menu konfigurasi
     Scenario 3: User mengklik button tambah pengguna
     Scenario 4: User menambahkan pengguna dengan role staff

@@ -5,7 +5,7 @@ Resource    ../Keyword/browser.robot
 
 *** Variables ***
 ${adm_usr}              ptm15@madrasah.kemenag.go.id
-${usr_role4}            ptm16@madrasah.kemenag.go.id
+${usr_role4}            abdulrouf@madrasah.kemenag.go.id
 ${usr_staffAdmin}       ptm22@madrasah.kemenag.go.id
 ${usr_penagungjawab3}   ptm13@madrasah.kemenag.go.id
 ${usr_penagungjawab4}   ptm14@madrasah.kemenag.go.id
@@ -23,11 +23,13 @@ Input Text Kosong
 Input Valid Username
     input text                      ${username}     ${adm_usr}
 Input Username Consultant
-    input text                      ${username}     ptm37@madrasah.kemenag.go.id
+    input text                      ${username}     farmanizhar@madrasah.kemenag.go.id
 Input Username Koordinator
-    input text                      ${username}     ptm34@madrasah.kemenag.go.id
+    input text                      ${username}     acengabdulazis@madrasah.kemenag.go.id
+Input Username Bendahara Treasure
+    input text                      ${username}     siska.merrydian@madrasah.kemenag.go.id
 Input Username PMU
-    input text                      ${username}     ptm16@madrasah.kemenag.go.id
+    input text                      ${username}     abdulrouf@madrasah.kemenag.go.id
 Input Valid Username role komponen 4
     input text                      ${username}     ${usr_role4}
 Input Valid Username staff administrasi
@@ -48,8 +50,8 @@ Click Button Submit
                                     ...    snapshotItem(0).click();
 #    Click Element                   ${btnSubmit}
 Verify Home Page is open
-    Wait Until Element Is Visible    ${Verify_Home_Admin}   timeout=30s
-    Page Should Contain Element      ${Verify_Home_Admin}
+    Wait Until Element Is Visible    ${Verify_Profile}   timeout=30s
+    Page Should Contain Element      ${Verify_Profile}
 Verify Home Page Penanggung Jawab is open
     Wait Until Element Is Visible    ${Verify_Profile}  timeout=30s
     Page Should Contain Element      ${Verify_Profile}

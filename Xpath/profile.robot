@@ -1,5 +1,5 @@
 *** Variables ***
-${nameProfile}          //span[text()='User Administrator']
+${nameProfile}          css= .profile-button
 ${btnProfile}           //a[contains(.,'Profile')]
 ${verifyProfile}        //label[text()='Profile']
 ${btnEdit}              //button[text()='Edit']

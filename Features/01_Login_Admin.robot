@@ -11,13 +11,25 @@ Test Teardown   Finish Testcase
 
 
 *** Test Cases ***
-Login Admin
+Scenario 1 Login Invalid
     [Documentation]  Regression Login Admin
     [Tags]  Functionality
     Scenario 1: Login with username valid and password blank
+Scenario 2: Login Invalid
+    [Documentation]  Regression Login Admin
+    [Tags]  Functionality
     Scenario 2: Login with username blank and password valid
+Scenario 3: Login Invalid
+    [Documentation]  Regression Login Admin
+    [Tags]  Functionality
     Scenario 3: Login with username blank and password blank
+Scenario 4: Login Invalid
+    [Documentation]  Regression Login Admin
+    [Tags]  Functionality
     Scenario 4: Login with username tidak diketahui
+Scenario 5: Login Valid
+    [Documentation]  Regression Login Admin
+    [Tags]  Functionality
     Scenario 5: Login with username valid and password valid
 
 *** Keywords ***

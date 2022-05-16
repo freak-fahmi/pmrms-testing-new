@@ -9,13 +9,16 @@ Click Menu Profile
     Wait Until Element Is Visible    ${nameProfile}
     Click Element                    ${nameProfile}
 Click Button Profile
+    Wait Until Element Is Visible    ${btnProfile}
     Click Element                    ${btnProfile}
 Verify Page Profile
     Wait Until Element Is Visible    ${verifyProfile}
     Page Should Contain Element      ${verifyProfile}
 Click Button Edit Profile
     Wait Until Element Is Visible    ${btnEdit}
-    Click Element                    ${btnEdit}
+    Execute JavaScript              document.evaluate("${btnEdit}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
 Click Button Simpan
 #    Wait Until Element Is Visible     ${btnSimpan}
     Execute JavaScript              document.evaluate("${btnSimpan}",
@@ -39,7 +42,10 @@ Verify Role Staff
 Verify Delete Role Staff
     Page Should Not Contain Element    ${verifyRoleStaff}
 Click Button Ubah Password
-    Click Element                      ${btnUbahPassword}
+    Wait Until Element Is Visible    ${btnUbahPassword}
+    Execute JavaScript              document.evaluate("${btnUbahPassword}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
 Verify Page Ubah Password
     Page Should Contain Element         ${verifyPageUbahPwd}
 Input Password Lama

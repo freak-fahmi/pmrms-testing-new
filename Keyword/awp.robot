@@ -4,6 +4,7 @@ Library    String
 Resource    ../Xpath/awp.robot
 
 *** Variables ***
+${text}
 
 *** Keywords ***
 Click Menu AWP
@@ -73,6 +74,7 @@ Click Button Batal
                                     ...    snapshotItem(0).click();
 Input Data Umum
     ${text}=    Generate Random String      10      [LOWER]
+    Set Global Variable    ${text}
     Input Text    ${inputTahun}         2022
     Click Element    //label[text()='Komponen :']
     Wait Until Element Is Visible    ${pilihKomponen}   timeout=10s
@@ -95,7 +97,7 @@ Input Data Umum
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 Input Data Kegiatan
-    ${text}=    Generate Random String      10      [LOWER]
+#    ${text}=    Generate Random String      10      [LOWER]
     Wait Until Element Is Visible    ${TujuanKegiatan}  timeout=30s
     Input Text    ${TujuanKegiatan}     Automation Testing ${text}
     Input Text    ${descKegiatan}       Automation Testing ${text}
@@ -108,7 +110,7 @@ Input Data Kegiatan
                                     ...    snapshotItem(0).click();
 
 Input Data Pelaksanaan
-    ${text}=    Generate Random String      10      [LOWER]
+#    ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${volumeEvent}    200
     Input Text    ${tglMulai}       2022-04-30
     Input Text    ${tglAkhir}       2022-05-30
@@ -126,9 +128,15 @@ Input Data Pelaksanaan
     Click Element    ${clickAcehBarat}
     Click Element    ${btnSimpanPopup}
 
-    Click Element    ${jenisKegiatan}
-    Click Element    ${pilihJenisKegiatan}
-    Click Element    ${pilihJenisKegiatan}
+    Execute JavaScript              document.evaluate("${jenisKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+
+    Execute JavaScript              document.evaluate("${pilihJenisKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+
+#    Click Element    ${pilihJenisKegiatan}
     Input Text    ${jmlnarasumber}      10
     Input Text    ${asallembaga}        pendidikan
     Input Text    ${narasumberLainnya}    fahmi
@@ -136,7 +144,7 @@ Input Data Pelaksanaan
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 Input Data Peserta
-    ${text}=    Generate Random String      10      [LOWER]
+#    ${text}=    Generate Random String      10      [LOWER]
     Input Text    ${jmlPeserta}     500
     Input Text    ${pesertaLainnya}     fahmi
     Input Text    ${sasaranPeserta}     Automation Peserta
