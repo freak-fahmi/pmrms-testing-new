@@ -23,6 +23,10 @@ Search Pencarian by Nama Kegiatan
 Verify Nama Kegiatan
     Wait Until Element Is Visible       ${verifyNamaKegiatan}
     Page Should Contain Element         ${verifyNamaKegiatan}
+Filter by Tahun
+    Wait Until Element Is Visible    ${filterTahun}     timeout=30s
+    Click Element    ${filterTahun}
+    Click Element    ${pilihTahun}
 Search Pencarian No Data
     Wait Until Element Is Visible    ${inputCari}
     Input Text    ${inputCari}          testing123

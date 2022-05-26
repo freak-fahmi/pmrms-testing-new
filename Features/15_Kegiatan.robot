@@ -17,6 +17,7 @@ Menu Kegiatan
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu kegiatan
+    Scenario 16: User melakukan Filter data by Tahun
     Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
     Scenario 5: User Mengklik Sorting Status
@@ -40,6 +41,8 @@ Scenario 1: Login with username valid and password valid
 Scenario 2: User mengklik sidebar menu kegiatan
     Click Menu Kegiatan
     Verify Page Kegiatan
+Scenario 16: User melakukan Filter data by Tahun
+    Filter by Tahun
 Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Search Pencarian No Data
     Kegiatan.Click Button Cari

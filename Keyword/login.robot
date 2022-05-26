@@ -71,7 +71,7 @@ Verify Notif Blank Password
     Wait Until Element Is Visible    ${blank_pwd}
     Page Should Contain Element      ${blank_pwd}
 Verify Notif blank username & password
-    Wait Until Element Is Visible    ${blank_usr_pwd}
+    Wait Until Element Is Visible    ${blank_usr_pwd}       timeout=30s
     Page Should Contain Element      ${blank_usr_pwd}
 Verify Notif Pengguna tidak diketahui
     Wait Until Element Is Visible    ${usr_tdk_diketahui}

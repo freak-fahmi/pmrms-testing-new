@@ -39,4 +39,6 @@ ${btnSetuju}                //label[.='Setuju']
 ${catatan}                  //label[text()='Catatan :']/following::textarea
 ${catatanSetuju}            //label[text()='Colored']/following::textarea
 ${btnKirim}                 //label[.='Kirim']
+${filterTahun}              //button[.='Semua Tahun']
+${pilihTahun}               //label[.='AWP Tahun 2022']
 
