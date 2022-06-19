@@ -31,7 +31,7 @@ Menu Event
     Scenario 21: Login PMU
     Scenario 22: PMU Mengklik Lihat Detail Event
     Scenario 23: PMU Melakukan Approval Setuju
-#    Scenario 6: User mengklik button Tab laporan event
+    Scenario 24: User mengklik button Tab laporan event
 #    Scenario 7: User Mengklik Detail Laporan Event
 #    Scenario 8: User Mengklik History Pada Detail Laporan Event
 #    Scenario 9: User Mengklik Button Kembali dari Page detail laporan Event

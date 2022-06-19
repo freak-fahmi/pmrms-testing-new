@@ -51,13 +51,52 @@ Verify Email
     Page Should Contain Element         ${verifyEmail}
 Click Tambah Role
     Click Element    ${btnTambahRole}
+Select Unit Kerja
+    Select From List By Index    ${selectUnitKerja}     1
+select Komponent
+    Click Element    ${PilihUnit}
+pilih komponen
+    Click Element    ${komponen}
 Select Role
     Click Element    ${roleStaff}
+Select Role LSP
+    Click Element    ${roleLSP} 
+Input Start Date
+    Input Text    ${startDate}    2022-03-06
+Input End Date
+    Input Text    ${EndDate}      2022-12-06
+Click Tambah Kegiatan
+    Click Element   ${addKegiatan}
+Click Pilih
+    Click Element    ${pilih}
 Click Ubah Photo
     Click Element    ${btnUbahPhoto}
 Select Image
     Choose File    ${inputPhoto}        D://Image/testing.jpg
 Click Simpan Upload Photo
+    Click Element    ${btnSimpanUploadPhoto}
+Input Data Tambah Pengguna
+    ${numbers}=    Generate Random String      4    0123456789
+    input Text     ${inputNamaDepan}    test${numbers}
+    Input Text     ${inputNamaBelakang}    auto${numbers}
+    Input Text     ${email}     automation${numbers}
+    Select From List By Index    ${selectUnitKerja}     0
+    Click Element    ${PilihUnit}
+    Click Element    ${komponen}
+    Click Element    ${btnTambahRole}
+    Click Element    ${roleLSP}
+    Input Text    ${startDate}    2022-03-06
+    Input Text    ${EndDate}      2022-12-06
+    Wait Until Element Is Visible    ${addKegiatan}
+    Execute JavaScript              document.evaluate("${addKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Click Element    ${pilih}
+    Wait Until Element Is Visible    ${selectItem}
+    Click Element    ${selectItem}
+    Click Element    ${btnTambah}
+    Click Element    ${btnUbahPhoto}
+    Choose File    ${inputPhoto}        D://Image/testing.jpg
     Click Element    ${btnSimpanUploadPhoto}
 Click Button Simpan Tambah Pengguna
 #    Wait Until Element Is Visible     ${btnSimpan}

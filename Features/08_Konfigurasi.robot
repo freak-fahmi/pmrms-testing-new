@@ -18,7 +18,7 @@ Menu Konfigurasi
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik menu konfigurasi
     Scenario 3: User mengklik button tambah pengguna
-    Scenario 4: User menambahkan pengguna dengan role staff
+    Scenario 4: User menambahkan pengguna dengan role LSP
     Scenario 5: User mengklik Batal dari page tambah pengguna
     Scenario 6: User Search Pencarian by Nama Lengkap
     Scenario 7: User Search Pencarian by Email
@@ -36,15 +36,8 @@ Scenario 2: User mengklik menu konfigurasi
 Scenario 3: User mengklik button tambah pengguna
     Click Button Tambah Pengguna
     Verify Page Tambah Pengguna
-Scenario 4: User menambahkan pengguna dengan role staff
-    Input Nama Depan
-    Input Nama Belakang
-    input Email
-    Click Tambah Role
-    Select Role
-    Click Ubah Photo
-    Select Image
-    Click Simpan Upload Photo
+Scenario 4: User menambahkan pengguna dengan role LSP
+    Input Data Tambah Pengguna
     Click Button Simpan Tambah Pengguna
 Scenario 5: User mengklik Batal dari page tambah pengguna
 #    Click Button Tambah Pengguna
