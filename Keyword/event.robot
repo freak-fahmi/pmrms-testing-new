@@ -50,6 +50,7 @@ Verify Page Detail Event
     Wait Until Element Is Visible       ${verifyDetail}     timeout=30s
     Page Should Contain Element         ${verifyDetail}
 Click Button Kembali
+    Wait Until Element Is Visible    ${btnKembali}      timeout=30s
     Click Element                       ${btnKembali}
 Click Button Keluar
     Execute JavaScript              document.evaluate("${btnKeluar}",
@@ -116,6 +117,7 @@ Tambah Peserta Pelaksana
     Execute JavaScript              document.evaluate("${tbhPesertaPelaksana}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+    Select From List By Index    ${UnitKerja}   0
     Click Element    ${btnPilihKomponen}
     Click Element    ${pilihKomponen}
     Wait Until Element Is Visible    ${btnTambahStaff}      timeout=30s
@@ -141,13 +143,17 @@ Submit Agenda Event
     Choose File      ${inputFile}         D://Image/test.pdf
     Click Element       ${btnSimpan}
 Pilih Narahubung
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+#    Scroll Element Into View        //label[text()='Sebelumnya']
     Execute JavaScript              document.evaluate("${btnNarahubung}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
 #    Click Element    ${btnNarahubung}
+    Wait Until Element Is Visible    ${pilihNarahubung}     timeout=10s
     Execute JavaScript              document.evaluate("${pilihNarahubung}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+
 #    Click Element    ${pilihNarahubung}
 Submit RAB Kegiatan
 #    Click Element    ${rabKegiatan}

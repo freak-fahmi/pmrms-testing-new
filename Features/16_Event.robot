@@ -6,7 +6,7 @@ Resource    ../Keyword/event.robot
 Resource    ../Keyword/login.robot
 
 #Test Setup  Open Browser
-Test Teardown   Finish Testcase
+#Test Teardown   Finish Testcase
 
 *** Variables ***
 
@@ -19,6 +19,14 @@ Menu Event
     Scenario 2: User mengklik sidebar menu Event
     Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
+    Scenario 5: Coordinator Mengklik Lihat Detail Event
+    Scenario 6: User mengklik button Tab laporan event
+#    Scenario 7: User Mengklik Detail Laporan Event
+#    Scenario 8: User Mengklik History Pada Detail Laporan Event
+    Scenario 9: User Mengklik Button Kembali dari Page detail laporan Event
+#    Scenario 10: User Mengklik Button kembali dari page detail event
+    Scenario 11: User Mnegklik Button Keluar dari page detail event
+    Scenario 12: User mengklik button kalender event
     Scenario 13: Konsultan Tambah Concept Note
     Scenario 14: Konsultan Input Data Umum
     Scenario 15: Konsultan input Data Pelaksanaan dan Simpan
@@ -31,13 +39,7 @@ Menu Event
     Scenario 21: Login PMU
     Scenario 22: PMU Mengklik Lihat Detail Event
     Scenario 23: PMU Melakukan Approval Setuju
-    Scenario 24: User mengklik button Tab laporan event
-#    Scenario 7: User Mengklik Detail Laporan Event
-#    Scenario 8: User Mengklik History Pada Detail Laporan Event
-#    Scenario 9: User Mengklik Button Kembali dari Page detail laporan Event
-#    Scenario 10: User Mengklik Button kembali dari page detail event
-#    Scenario 11: User Mnegklik Button Keluar dari page detail event
-#    Scenario 12: User mengklik button kalender event
+
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
