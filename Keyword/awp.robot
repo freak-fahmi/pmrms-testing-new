@@ -14,11 +14,11 @@ Verify Page AWP
     Wait Until Element Is Visible    ${verifyAwp}  timeout=30s
     Page Should Contain Element    ${verifyAwp}
 Input Search by Nama kegiatan AWP
-    Wait Until Element Is Visible    ${searchAwp}
+    Wait Until Element Is Visible    ${searchAwp}       timeout=30s
     Input Text      ${searchAwp}    Automation
 Input Search by Pagu Anggaran AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
-    Wait Until Element Is Visible    ${searchAwp}
+    Wait Until Element Is Visible    ${searchAwp}       timeout=30s
     Input Text      ${searchAwp}    200
 Click Detail Awp
     Wait Until Element Is Visible    ${detailAwp}   timeout=30s
@@ -31,11 +31,11 @@ Verify Detail Awp
     Page Should Contain Element    ${verifyDetailAwp}
 Input Search by Komponen AWP
     Go To       http://pmrms.greatpmo.com/admin/awp
-    Wait Until Element Is Visible    ${searchAwp}
+    Wait Until Element Is Visible    ${searchAwp}       timeout=30s
     Input Text      ${searchAwp}    Kelompok Kerja Guru
 Input Search Karakter Angka Tidak sesuai
     Go To       http://pmrms.greatpmo.com/admin/awp
-    Wait Until Element Is Visible    ${searchAwp}
+    Wait Until Element Is Visible    ${searchAwp}       timeout=30s
     Input Text      ${searchAwp}    testing123
 Click Button Cari
     Click Element       ${btnCari}
@@ -85,8 +85,25 @@ Input Data Umum
     Wait Until Element Is Visible     ${clickSubComponent}  timeout=10s
     Click Element    ${clickSubComponent}
     Sleep    3s
-    Input Text    ${inputSubComponent}    Automation Testing ${text}
-    Input Text    ${inputKegiatan}      Automation Testing ${text}
+
+    Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Sleep    3s
+    Execute JavaScript              document.evaluate("${pilihKegiatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Click Element    //label[text()='Nama Kegiatan :']
+    Sleep    3s
+#    Execute JavaScript              document.evaluate("${pilihKegiatan}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
+
+    Execute JavaScript              document.evaluate("${clickkeg}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Input Text    ${inputSubComponent}    Automation Testing ${text}
+#    Input Text    ${inputKegiatan}      Automation Testing ${text}
     Wait Until Element Is Visible    ${modaKegiatan}
     Execute JavaScript              document.evaluate("${modaKegiatan}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
@@ -169,6 +186,33 @@ Input Data Peserta
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
     Sleep    5s
+Click Button Export Awp ke Doc
+    Wait Until Element Is Visible       ${exportAwpDoc}        timeout=30s
+    Click Element    ${exportAwpDoc}
+Pilih Export 2021
+    Click Element    ${export2021}
+    Wait Until Element Is Visible    ${DownloadAwp}
+Click Donwload Awp
+    Click Element    ${DownloadAwp}
+Click Edit Informasi Tambahan
+    Click Element   ${editInfoTambahan}
+Input Capaian PDO
+    Wait Until Element Is Visible    ${btnLanjut}   timeout=30s
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+#    Click Element    ${btnLanjut}
+#    Click Element    ${btnLanjut}
+#    Click Element    ${btnLanjut}
+#    Wait Until Element Is Visible    ${inputCapaian}   timeout=30s
+#    Input Text       ${inputCapaian}    automation
+
     
     
 

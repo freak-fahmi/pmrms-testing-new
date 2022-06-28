@@ -6,7 +6,7 @@ Resource    ../Keyword/event.robot
 Resource    ../Keyword/login.robot
 
 #Test Setup  Open Browser
-#Test Teardown   Finish Testcase
+Test Teardown   Finish Testcase
 
 *** Variables ***
 
@@ -19,6 +19,8 @@ Menu Event
     Scenario 2: User mengklik sidebar menu Event
     Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
+    Scenario 24: Go to Detail Event
+    Scenario 25: Sort Status
     Scenario 5: Coordinator Mengklik Lihat Detail Event
     Scenario 6: User mengklik button Tab laporan event
 #    Scenario 7: User Mengklik Detail Laporan Event
@@ -31,6 +33,8 @@ Menu Event
     Scenario 14: Konsultan Input Data Umum
     Scenario 15: Konsultan input Data Pelaksanaan dan Simpan
     Scenario 16: Login Coordinator untuk approval
+    Scenario 24: Go to Detail Event
+    Scenario 25: Sort Status
     Scenario 5: Coordinator Mengklik Lihat Detail Event
     Scenario 17: Coordinator Melakukan Approval Setuju
     Scenario 18: Login Bendahara/Treasure
@@ -59,8 +63,13 @@ Scenario 4: User melakukan pencarian data by nama kegiatan
     Search Pencarian by Nama Kegiatan
     Click Button Cari
 #    Verify Nama Kegiatan
-Scenario 5: Coordinator Mengklik Lihat Detail Event
+Scenario 24: Go to Detail Event
     Go To    http://pmrms.greatpmo.com/activity/event
+Scenario 25: Sort Status
+    Wait Until Element Is Visible    //th[text()='Status']      timeout=30s
+    Click Element    //th[text()='Status']
+Scenario 5: Coordinator Mengklik Lihat Detail Event
+#    Go To    http://pmrms.greatpmo.com/activity/event
     Click Button Lihat Event
     Verify Page Detail Event
 Scenario 6: User mengklik button Tab laporan event
@@ -148,7 +157,6 @@ Scenario 23: PMU Melakukan Approval Setuju
     Click Button Setuju
     Input Reason Setuju
     Click Button Kirim
-
 
 
 

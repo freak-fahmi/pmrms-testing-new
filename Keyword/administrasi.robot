@@ -31,23 +31,23 @@ Click Button Batal
 Click Direktori Staff
     Click Element    ${menuDirektoriStaff}
 Verify Page Direktori Staff
-    Wait Until Element Is Visible       ${verifyDaftarStaff}
+    Wait Until Element Is Visible       ${verifyDaftarStaff}        timeout=30s
     Page Should Contain Element         ${verifyDaftarStaff}
 Click Lihat Detail Daftar Staff
     Wait Until Element Is Visible       ${btnLihatDetail}
     Click Element    ${btnLihatDetail}
 Verify Page Detail Staff
-    Wait Until Element Is Visible       ${btnEditStaff}
+    Wait Until Element Is Visible       ${btnEditStaff}     timeout=30s
     Page Should Contain Element         ${btnEditStaff}
 Click Button Edit Staff
     Click Element                       ${btnEditStaff}
 Verify Page Edit Staff
-    Wait Until Element Is Visible       ${btnKembali}
+    Wait Until Element Is Visible       ${btnKembali}       timeout=30s
     Page Should Contain Element         ${btnKembali}
 Click Menu Kegiatan Luar Kota
     Click Element    ${menuKegiatanLuarKota}
 Verify Page Kegiatan Luar Kota
-    Wait Until Element Is Visible       ${verifyKegiatanLuarKota}
+    Wait Until Element Is Visible       ${verifyKegiatanLuarKota}   timeout=30s
     Page Should Contain Element         ${verifyKegiatanLuarKota}
 Click Button Ajukan Kegiatan
     Click Element    ${verifyKegiatanLuarKota}
