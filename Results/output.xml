@@ -1,585 +1,637 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20220628 21:43:01.147" rpa="false">
-<suite id="s1" name="05 Awp" source="D:\pyCharmProject\pmrms-testing\Features\05_Awp.robot">
-<test id="s1-t1" name="Menu AWP">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220704 09:20:36.056" rpa="false" schemaversion="3">
+<suite id="s1" name="17 Monev" source="D:\pmrms-testing\Features\17_Monev.robot">
+<test id="s1-t1" name="Menu Monev" line="15">
 <kw name="Scenario 1: Login with username valid and password valid">
 <kw name="Given Login page is open" library="login">
 <kw name="Open Browser" library="browser">
 <kw name="Start Testcase Headless" library="browser">
 <kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<arguments>
-<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
-</arguments>
-<assign>
 <var>${options}</var>
-</assign>
-<msg timestamp="20220628 21:43:01.654" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0489B760&gt;</msg>
-<status status="PASS" starttime="20220628 21:43:01.654" endtime="20220628 21:43:01.654"></status>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220704 09:20:36.244" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001BB5548C9A0&gt;</msg>
+<status status="PASS" starttime="20220704 09:20:36.244" endtime="20220704 09:20:36.244"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-certificate-errors</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.654" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.244" endtime="20220704 09:20:36.244"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-ssl-errors</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.244" endtime="20220704 09:20:36.244"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:36.245"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:36.245"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:36.245"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size\=1366,768</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:36.245"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:01.655"></status>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:36.245"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
-<doc>Creates an instance of Selenium WebDriver.</doc>
-<arguments>
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:01.655" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220628 21:43:01.655" endtime="20220628 21:43:03.261"></status>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220704 09:20:36.245" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220704 09:20:36.245" endtime="20220704 09:20:39.730"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:01.654" endtime="20220628 21:43:03.261"></status>
+<status status="PASS" starttime="20220704 09:20:36.244" endtime="20220704 09:20:39.730"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
 <arg>${chrome_browser}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:03.262" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/login'</msg>
-<status status="PASS" starttime="20220628 21:43:03.261" endtime="20220628 21:43:11.023"></status>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220704 09:20:39.732" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/login'</msg>
+<status status="PASS" starttime="20220704 09:20:39.731" endtime="20220704 09:20:44.711"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:01.653" endtime="20220628 21:43:11.024"></status>
+<status status="PASS" starttime="20220704 09:20:36.244" endtime="20220704 09:20:44.712"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:01.652" endtime="20220628 21:43:11.024"></status>
+<status status="PASS" starttime="20220704 09:20:36.243" endtime="20220704 09:20:44.712"/>
 </kw>
 <kw name="And Input Valid Username" library="login">
 <kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
 <arg>${username}</arg>
 <arg>${adm_usr}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:11.025" level="INFO">Typing text 'ptm15@madrasah.kemenag.go.id' into text field '//input[@id='email']'.</msg>
-<status status="PASS" starttime="20220628 21:43:11.025" endtime="20220628 21:43:11.233"></status>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:44.714" level="INFO">Typing text 'ptm15@madrasah.kemenag.go.id' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220704 09:20:44.713" endtime="20220704 09:20:44.826"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:11.025" endtime="20220628 21:43:11.233"></status>
+<status status="PASS" starttime="20220704 09:20:44.713" endtime="20220704 09:20:44.826"/>
 </kw>
 <kw name="And Input Valid Password" library="login">
 <kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
 <arg>${pwd}</arg>
 <arg>${adm_pwd}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:11.233" level="INFO">Typing text 'User@madrasah2022' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220628 21:43:11.233" endtime="20220628 21:43:11.409"></status>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:44.826" level="INFO">Typing text 'User@madrasah2022' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220704 09:20:44.826" endtime="20220704 09:20:44.916"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:11.233" endtime="20220628 21:43:11.409"></status>
+<status status="PASS" starttime="20220704 09:20:44.826" endtime="20220704 09:20:44.916"/>
 </kw>
 <kw name="When Click button submit" library="login">
 <kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
 <arg>document.evaluate("${btnSubmit}",</arg>
 <arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
 <arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220628 21:43:11.410" level="INFO">Executing JavaScript:
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:44.917" level="INFO">Executing JavaScript:
 document.evaluate("//button[@class='btn']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
 Without any arguments.</msg>
-<status status="PASS" starttime="20220628 21:43:11.410" endtime="20220628 21:43:11.436"></status>
+<status status="PASS" starttime="20220704 09:20:44.916" endtime="20220704 09:20:44.923"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:11.409" endtime="20220628 21:43:11.437"></status>
+<status status="PASS" starttime="20220704 09:20:44.916" endtime="20220704 09:20:44.923"/>
 </kw>
 <kw name="Then Verify Home Page is open" library="login">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
 <arg>${Verify_Profile}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:11.439" endtime="20220628 21:43:13.992"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:44.924" endtime="20220704 09:20:46.508"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
 <arg>${Verify_Profile}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:14.009" level="INFO">Current page contains element 'css= .profile-button'.</msg>
-<status status="PASS" starttime="20220628 21:43:13.992" endtime="20220628 21:43:14.010"></status>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220704 09:20:46.518" level="INFO">Current page contains element 'css= .profile-button'.</msg>
+<status status="PASS" starttime="20220704 09:20:46.508" endtime="20220704 09:20:46.518"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:11.437" endtime="20220628 21:43:14.010"></status>
+<status status="PASS" starttime="20220704 09:20:44.924" endtime="20220704 09:20:46.519"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:01.651" endtime="20220628 21:43:14.011"></status>
+<status status="PASS" starttime="20220704 09:20:36.243" endtime="20220704 09:20:46.519"/>
 </kw>
-<kw name="Scenario 2: User mengklik sidebar menu awp">
-<kw name="Click Menu AWP" library="awp">
+<kw name="Scenario 2: User Klik Menu Monev Longterm Target">
+<kw name="Click Monev Longterm target" library="monev">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://pmrms.greatpmo.com/monev/monev-longterm/Longterm</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220704 09:20:46.521" level="INFO">Opening url 'http://pmrms.greatpmo.com/monev/monev-longterm/Longterm'</msg>
+<status status="PASS" starttime="20220704 09:20:46.521" endtime="20220704 09:20:48.560"/>
+</kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${menuAwp}</arg>
-<arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:14.013" endtime="20220628 21:43:15.366"></status>
+<arg>${pageLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:48.560" endtime="20220704 09:20:48.590"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:46.520" endtime="20220704 09:20:48.590"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:46.519" endtime="20220704 09:20:48.590"/>
+</kw>
+<kw name="Scenario 3: User Klik View Longterm Target">
+<kw name="Click View Target" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${viewLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:48.592" endtime="20220704 09:20:48.834"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${menuAwp}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:15.366" level="INFO">Clicking element '//a[@href='/admin/awp']'.</msg>
-<status status="PASS" starttime="20220628 21:43:15.366" endtime="20220628 21:43:15.463"></status>
+<arg>${viewLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:48.835" level="INFO">Clicking element 'css= .spacing'.</msg>
+<status status="PASS" starttime="20220704 09:20:48.834" endtime="20220704 09:20:48.893"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:14.012" endtime="20220628 21:43:15.464"></status>
+<status status="PASS" starttime="20220704 09:20:48.591" endtime="20220704 09:20:48.893"/>
 </kw>
-<kw name="Verify Page AWP" library="awp">
+<status status="PASS" starttime="20220704 09:20:48.591" endtime="20220704 09:20:48.893"/>
+</kw>
+<kw name="Scenario 4: User Klik Close View Longterm Target">
+<kw name="Click Close View" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${verifyAwp}</arg>
+<arg>${closeLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:48.895" endtime="20220704 09:20:48.929"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${closeLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:48.929" level="INFO">Clicking element 'css=.btn-close'.</msg>
+<status status="PASS" starttime="20220704 09:20:48.929" endtime="20220704 09:20:48.974"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:48.894" endtime="20220704 09:20:48.974"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:48.894" endtime="20220704 09:20:48.974"/>
+</kw>
+<kw name="Scenario 5: User Klik Button Edit Longterm">
+<kw name="Click Button Edit" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:15.465" endtime="20220628 21:43:16.882"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:48.975" endtime="20220704 09:20:49.007"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:49.007" level="INFO">Clicking element '//button[text()='Edit']'.</msg>
+<status status="PASS" starttime="20220704 09:20:49.007" endtime="20220704 09:20:49.150"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:48.975" endtime="20220704 09:20:49.150"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:48.975" endtime="20220704 09:20:49.151"/>
+</kw>
+<kw name="Scenario 6: User Pilih Indikator Klik Simpan Longterm Target">
+<kw name="Pilih indikator longterm" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${pilihIndikator}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:49.152" endtime="20220704 09:20:49.853"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${pilihIndikator}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:49.854" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Pilih Indikator Keberhasilan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:49.853" endtime="20220704 09:20:49.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${indikatorLongterm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:49.869" level="INFO">Clicking element '//label[text()='L.1.1 - Persentase Madrasah yang mengalami perbaikan capaian tingkat madrasah dalam Sistem Pendidikan Nasional']'.</msg>
+<status status="PASS" starttime="20220704 09:20:49.868" endtime="20220704 09:20:49.929"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:49.152" endtime="20220704 09:20:49.929"/>
+</kw>
+<kw name="Click Button Lanjut" library="monev">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${lanjut}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:49.930" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Lanjut']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:49.930" endtime="20220704 09:20:49.941"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:49.929" endtime="20220704 09:20:49.941"/>
+</kw>
+<kw name="Click Button Simpan" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnSimpan}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:49.943" endtime="20220704 09:20:49.971"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${btnSimpan}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:49.972" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Simpan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:49.971" endtime="20220704 09:20:49.982"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:49.941" endtime="20220704 09:20:49.982"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:49.151" endtime="20220704 09:20:49.982"/>
+</kw>
+<kw name="Scenario 7: User Klik Menu Monev Midterm Target">
+<kw name="Click Monev Midterm Output Target" library="monev">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://pmrms.greatpmo.com/monev/monev-midterm/Midterm</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220704 09:20:49.983" level="INFO">Opening url 'http://pmrms.greatpmo.com/monev/monev-midterm/Midterm'</msg>
+<status status="PASS" starttime="20220704 09:20:49.983" endtime="20220704 09:20:50.740"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${pageMonevMidterm}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:50.740" endtime="20220704 09:20:50.766"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${pageMonevMidterm}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${verifyAwp}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:16.894" level="INFO">Current page contains element '//label[text()='Annual Work Plan (AWP)']'.</msg>
-<status status="PASS" starttime="20220628 21:43:16.882" endtime="20220628 21:43:16.894"></status>
+<msg timestamp="20220704 09:20:50.774" level="INFO">Current page contains element '//label[text()='Midterm Outcome']'.</msg>
+<status status="PASS" starttime="20220704 09:20:50.766" endtime="20220704 09:20:50.774"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:15.464" endtime="20220628 21:43:16.894"></status>
+<status status="PASS" starttime="20220704 09:20:49.983" endtime="20220704 09:20:50.774"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:14.012" endtime="20220628 21:43:16.894"></status>
+<status status="PASS" starttime="20220704 09:20:49.982" endtime="20220704 09:20:50.774"/>
 </kw>
-<kw name="Scenario 3: User mengklik button index page untuk melihat data selanjutnya">
-<kw name="Click Pagination AWP" library="awp">
+<kw name="Scenario 8: User Klik View Midterm Target">
+<kw name="Click View Target" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${pagination}</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:16.894" endtime="20220628 21:43:18.787"></status>
+<arg>${viewLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:50.775" endtime="20220704 09:20:51.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${viewLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:51.019" level="INFO">Clicking element 'css= .spacing'.</msg>
+<status status="PASS" starttime="20220704 09:20:51.019" endtime="20220704 09:20:51.087"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:50.775" endtime="20220704 09:20:51.087"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:50.775" endtime="20220704 09:20:51.087"/>
+</kw>
+<kw name="Scenario 9: User Klik Close View Midterm Target">
+<kw name="Click Close View" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${closeLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:51.089" endtime="20220704 09:20:51.126"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${closeLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:51.127" level="INFO">Clicking element 'css=.btn-close'.</msg>
+<status status="PASS" starttime="20220704 09:20:51.126" endtime="20220704 09:20:51.174"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:51.089" endtime="20220704 09:20:51.174"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:51.089" endtime="20220704 09:20:51.174"/>
+</kw>
+<kw name="Scenario 10: User Klik Button Edit Midterm">
+<kw name="Click Button Edit" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:51.175" endtime="20220704 09:20:51.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:51.201" level="INFO">Clicking element '//button[text()='Edit']'.</msg>
+<status status="PASS" starttime="20220704 09:20:51.200" endtime="20220704 09:20:51.342"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:51.175" endtime="20220704 09:20:51.342"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:51.175" endtime="20220704 09:20:51.342"/>
+</kw>
+<kw name="Scenario 11: User Pilih Indikator Klik Simpan Midterm Target">
+<kw name="Pilih indikator midterm" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${pilihIndikator}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:51.345" endtime="20220704 09:20:52.520"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
-<arg>document.evaluate("${pagination}",</arg>
+<arg>document.evaluate("${pilihIndikator}",</arg>
 <arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
 <arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220628 21:43:18.788" level="INFO">Executing JavaScript:
-document.evaluate("//a[.='2']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:52.521" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Pilih Indikator Keberhasilan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
 Without any arguments.</msg>
-<status status="PASS" starttime="20220628 21:43:18.787" endtime="20220628 21:43:18.804"></status>
+<status status="PASS" starttime="20220704 09:20:52.520" endtime="20220704 09:20:52.539"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:16.894" endtime="20220628 21:43:18.804"></status>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${indikatormidterm}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:52.540" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='M.1.1 - Rerata nilai guru dalam Rapor Mutu Guru berbasis AKG']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:52.539" endtime="20220704 09:20:52.562"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:16.894" endtime="20220628 21:43:18.805"></status>
+<status status="PASS" starttime="20220704 09:20:51.344" endtime="20220704 09:20:52.564"/>
 </kw>
-<kw name="Scenario 4: User mengklik field search input by Nama Kegiatan">
-<kw name="Input Search by Nama kegiatan AWP" library="awp">
+<kw name="Click Button Lanjut" library="monev">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${lanjut}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:52.566" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Lanjut']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:52.565" endtime="20220704 09:20:52.578"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:52.564" endtime="20220704 09:20:52.578"/>
+</kw>
+<kw name="Click Button Simpan" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:18.809" endtime="20220628 21:43:18.852"></status>
+<arg>${btnSimpan}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:52.578" endtime="20220704 09:20:52.604"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>Automation</arg>
-</arguments>
-<msg timestamp="20220628 21:43:18.852" level="INFO">Typing text 'Automation' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220628 21:43:18.852" endtime="20220628 21:43:19.057"></status>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${btnSimpan}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:52.604" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Simpan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:52.604" endtime="20220704 09:20:52.611"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:18.807" endtime="20220628 21:43:19.057"></status>
+<status status="PASS" starttime="20220704 09:20:52.578" endtime="20220704 09:20:52.611"/>
 </kw>
-<kw name="Click Button Cari" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnCari}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:19.060" level="INFO">Clicking element '//button[@class='btn form-control text-white']'.</msg>
-<status status="PASS" starttime="20220628 21:43:19.059" endtime="20220628 21:43:19.175"></status>
+<status status="PASS" starttime="20220704 09:20:51.344" endtime="20220704 09:20:52.611"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:19.058" endtime="20220628 21:43:19.175"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:18.806" endtime="20220628 21:43:19.175"></status>
-</kw>
-<kw name="Scenario 5: User mengklik field search input by Pagu Anggaran Awp">
-<kw name="Input Search by Pagu Anggaran AWP" library="awp">
+<kw name="Scenario 12: User Klik Menu Monev Intermediate Target">
+<kw name="Click Monev Intermediate Output Target" library="monev">
 <kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>http://pmrms.greatpmo.com/admin/awp</arg>
-</arguments>
-<msg timestamp="20220628 21:43:19.181" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/awp'</msg>
-<status status="PASS" starttime="20220628 21:43:19.181" endtime="20220628 21:43:20.497"></status>
+<arg>http://pmrms.greatpmo.com/monev/monev-intermediate/intermediate</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220704 09:20:52.615" level="INFO">Opening url 'http://pmrms.greatpmo.com/monev/monev-intermediate/intermediate'</msg>
+<status status="PASS" starttime="20220704 09:20:52.615" endtime="20220704 09:20:53.061"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
+<arg>${pageMonevIntermediate}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:20.497" endtime="20220628 21:43:23.460"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>200</arg>
-</arguments>
-<msg timestamp="20220628 21:43:23.462" level="INFO">Typing text '200' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220628 21:43:23.461" endtime="20220628 21:43:23.637"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:19.180" endtime="20220628 21:43:23.637"></status>
-</kw>
-<kw name="Click Button Cari" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnCari}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:23.638" level="INFO">Clicking element '//button[@class='btn form-control text-white']'.</msg>
-<status status="PASS" starttime="20220628 21:43:23.638" endtime="20220628 21:43:23.740"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:23.637" endtime="20220628 21:43:23.740"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:19.179" endtime="20220628 21:43:23.741"></status>
-</kw>
-<kw name="Scenario 8: User mengklik field search input by Komponen Awp">
-<kw name="Input Search by Komponen AWP" library="awp">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>http://pmrms.greatpmo.com/admin/awp</arg>
-</arguments>
-<msg timestamp="20220628 21:43:23.744" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/awp'</msg>
-<status status="PASS" starttime="20220628 21:43:23.743" endtime="20220628 21:43:24.918"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:24.918" endtime="20220628 21:43:27.464"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>Kelompok Kerja Guru</arg>
-</arguments>
-<msg timestamp="20220628 21:43:27.465" level="INFO">Typing text 'Kelompok Kerja Guru' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220628 21:43:27.464" endtime="20220628 21:43:27.695"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:23.743" endtime="20220628 21:43:27.695"></status>
-</kw>
-<kw name="Click Button Cari" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnCari}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:27.696" level="INFO">Clicking element '//button[@class='btn form-control text-white']'.</msg>
-<status status="PASS" starttime="20220628 21:43:27.696" endtime="20220628 21:43:27.777"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:27.695" endtime="20220628 21:43:27.778"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:23.742" endtime="20220628 21:43:27.778"></status>
-</kw>
-<kw name="Scenario 9: User menginputkan karakter dan angka tidak sesuai">
-<kw name="Input Search Karakter Angka Tidak sesuai" library="awp">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>http://pmrms.greatpmo.com/admin/awp</arg>
-</arguments>
-<msg timestamp="20220628 21:43:27.780" level="INFO">Opening url 'http://pmrms.greatpmo.com/admin/awp'</msg>
-<status status="PASS" starttime="20220628 21:43:27.780" endtime="20220628 21:43:28.583"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:28.584" endtime="20220628 21:43:30.260"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${searchAwp}</arg>
-<arg>testing123</arg>
-</arguments>
-<msg timestamp="20220628 21:43:30.262" level="INFO">Typing text 'testing123' into text field '//input[contains(@class,'form-control ng-untouched')]'.</msg>
-<status status="PASS" starttime="20220628 21:43:30.261" endtime="20220628 21:43:30.443"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:27.779" endtime="20220628 21:43:30.443"></status>
-</kw>
-<kw name="Click Button Cari" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btnCari}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:30.444" level="INFO">Clicking element '//button[@class='btn form-control text-white']'.</msg>
-<status status="PASS" starttime="20220628 21:43:30.444" endtime="20220628 21:43:30.557"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:30.443" endtime="20220628 21:43:30.557"></status>
-</kw>
-<kw name="Verify No Data" library="awp">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${verifyNoData}</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:30.558" endtime="20220628 21:43:31.317"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:53.061" endtime="20220704 09:20:53.097"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${pageMonevIntermediate}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${verifyNoData}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:31.344" level="INFO">Current page contains element '//td[text()='No data!']'.</msg>
-<status status="PASS" starttime="20220628 21:43:31.318" endtime="20220628 21:43:31.345"></status>
+<msg timestamp="20220704 09:20:53.106" level="INFO">Current page contains element '//label[text()='Intermediate Outcome']'.</msg>
+<status status="PASS" starttime="20220704 09:20:53.098" endtime="20220704 09:20:53.106"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:30.557" endtime="20220628 21:43:31.345"></status>
+<status status="PASS" starttime="20220704 09:20:52.614" endtime="20220704 09:20:53.106"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:27.779" endtime="20220628 21:43:31.346"></status>
+<status status="PASS" starttime="20220704 09:20:52.613" endtime="20220704 09:20:53.106"/>
 </kw>
-<kw name="Scenario 14: User Download Export AWP ke Doc">
-<kw name="Click Button Export Awp ke Doc" library="awp">
+<kw name="Scenario 13: User Klik View Intermediate Target">
+<kw name="Click View Target" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${exportAwpDoc}</arg>
+<arg>${viewLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:53.107" endtime="20220704 09:20:53.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${viewLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:53.345" level="INFO">Clicking element 'css= .spacing'.</msg>
+<status status="PASS" starttime="20220704 09:20:53.344" endtime="20220704 09:20:53.422"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:53.107" endtime="20220704 09:20:53.422"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:53.107" endtime="20220704 09:20:53.422"/>
+</kw>
+<kw name="Scenario 14: User Klik Close View Intermediate Target">
+<kw name="Click Close View" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${closeLongTerm}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:53.422" endtime="20220704 09:20:53.458"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${closeLongTerm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:53.459" level="INFO">Clicking element 'css=.btn-close'.</msg>
+<status status="PASS" starttime="20220704 09:20:53.458" endtime="20220704 09:20:53.510"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:53.422" endtime="20220704 09:20:53.511"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:53.422" endtime="20220704 09:20:53.511"/>
+</kw>
+<kw name="Scenario 15: User Klik Button Edit Intermediate">
+<kw name="Click Button Edit" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:31.349" endtime="20220628 21:43:31.430"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:53.513" endtime="20220704 09:20:53.536"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${exportAwpDoc}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:31.432" level="INFO">Clicking element '//label[text()='Export AWP ke Doc']'.</msg>
-<status status="PASS" starttime="20220628 21:43:31.431" endtime="20220628 21:43:31.677"></status>
+<arg>${btnEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:53.537" level="INFO">Clicking element '//button[text()='Edit']'.</msg>
+<status status="PASS" starttime="20220704 09:20:53.536" endtime="20220704 09:20:53.674"/>
 </kw>
-<status status="PASS" starttime="20220628 21:43:31.348" endtime="20220628 21:43:31.678"></status>
+<status status="PASS" starttime="20220704 09:20:53.512" endtime="20220704 09:20:53.674"/>
 </kw>
-<kw name="Pilih Export 2021" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${export2021}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:31.681" level="INFO">Clicking element '//label[text()='Export Tahun 2021']'.</msg>
-<status status="PASS" starttime="20220628 21:43:31.679" endtime="20220628 21:43:31.815"></status>
+<status status="PASS" starttime="20220704 09:20:53.512" endtime="20220704 09:20:53.674"/>
 </kw>
+<kw name="Scenario 16: User User Pilih Indikator Klik Simpan Intermediate Target">
+<kw name="Pilih indikator intermediate" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${DownloadAwp}</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:31.816" endtime="20220628 21:43:32.612"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:31.678" endtime="20220628 21:43:32.613"></status>
-</kw>
-<kw name="Click Donwload Awp" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${DownloadAwp}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:32.614" level="INFO">Clicking element '//label[text()='Download AWP']'.</msg>
-<status status="PASS" starttime="20220628 21:43:32.614" endtime="20220628 21:43:32.779"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:32.613" endtime="20220628 21:43:32.779"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:31.347" endtime="20220628 21:43:32.779"></status>
-</kw>
-<kw name="Scenario 15: User Edit Informasi Tambahan pada Konfirmasi Export AWP">
-<kw name="Click Button Export Awp ke Doc" library="awp">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${exportAwpDoc}</arg>
+<arg>${pilihIndikator}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:32.782" endtime="20220628 21:43:43.990"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${exportAwpDoc}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:43.991" level="INFO">Clicking element '//label[text()='Export AWP ke Doc']'.</msg>
-<status status="PASS" starttime="20220628 21:43:43.991" endtime="20220628 21:43:44.415"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:32.781" endtime="20220628 21:43:44.416"></status>
-</kw>
-<kw name="Pilih Export 2021" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${export2021}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:44.418" level="INFO">Clicking element '//label[text()='Export Tahun 2021']'.</msg>
-<status status="PASS" starttime="20220628 21:43:44.417" endtime="20220628 21:43:44.609"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${DownloadAwp}</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:44.609" endtime="20220628 21:43:45.356"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:44.416" endtime="20220628 21:43:45.358"></status>
-</kw>
-<kw name="Click Edit Informasi Tambahan" library="awp">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${editInfoTambahan}</arg>
-</arguments>
-<msg timestamp="20220628 21:43:45.363" level="INFO">Clicking element '//label[text()='Edit Informasi Tambahan']'.</msg>
-<status status="PASS" starttime="20220628 21:43:45.361" endtime="20220628 21:43:45.628"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:45.359" endtime="20220628 21:43:45.629"></status>
-</kw>
-<status status="PASS" starttime="20220628 21:43:32.780" endtime="20220628 21:43:45.629"></status>
-</kw>
-<kw name="Scenario 16: User Input Capaian PDO">
-<kw name="Input Capaian PDO" library="awp">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${btnLanjut}</arg>
-<arg>timeout=30s</arg>
-</arguments>
-<status status="PASS" starttime="20220628 21:43:45.635" endtime="20220628 21:43:49.973"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:53.675" endtime="20220704 09:20:54.430"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
-<arg>document.evaluate("${btnLanjut}",</arg>
+<arg>document.evaluate("${pilihIndikator}",</arg>
 <arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
 <arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220628 21:43:49.975" level="INFO">Executing JavaScript:
-document.evaluate("//button[text()='Lanjut']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:54.432" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Pilih Indikator Keberhasilan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
 Without any arguments.</msg>
-<status status="PASS" starttime="20220628 21:43:49.974" endtime="20220628 21:43:50.092"></status>
+<status status="PASS" starttime="20220704 09:20:54.430" endtime="20220704 09:20:54.447"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<arguments>
-<arg>document.evaluate("${btnLanjut}",</arg>
+<arg>document.evaluate("${indikatorIntermediate}",</arg>
 <arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
 <arg>snapshotItem(0).click();</arg>
-</arguments>
-<msg timestamp="20220628 21:43:50.093" level="INFO">Executing JavaScript:
-document.evaluate("//button[text()='Lanjut']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:54.447" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='I.1.A.1 - Buat Baru']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
 Without any arguments.</msg>
-<status status="PASS" starttime="20220628 21:43:50.092" endtime="20220628 21:43:50.107"></status>
+<status status="PASS" starttime="20220704 09:20:54.447" endtime="20220704 09:20:54.462"/>
 </kw>
+<status status="PASS" starttime="20220704 09:20:53.675" endtime="20220704 09:20:54.462"/>
+</kw>
+<kw name="Click Button Lanjut" library="monev">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${lanjut}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:54.464" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Lanjut']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:54.463" endtime="20220704 09:20:54.486"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:54.462" endtime="20220704 09:20:54.486"/>
+</kw>
+<kw name="Click Button Simpan" library="monev">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${inputCapaian}</arg>
+<arg>${btnSimpan}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:54.486" endtime="20220704 09:20:54.511"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("${btnSimpan}",</arg>
+<arg>document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).</arg>
+<arg>snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220704 09:20:54.511" level="INFO">Executing JavaScript:
+document.evaluate("//label[text()='Simpan']",document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220704 09:20:54.511" endtime="20220704 09:20:54.520"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:54.486" endtime="20220704 09:20:54.520"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:53.675" endtime="20220704 09:20:54.520"/>
+</kw>
+<kw name="Scenario 17: User klik button edit Output">
+<kw name="Click Edit Monev output" library="monev">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://pmrms.greatpmo.com/monev/list-monev/output</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220704 09:20:54.521" level="INFO">Opening url 'http://pmrms.greatpmo.com/monev/list-monev/output'</msg>
+<status status="PASS" starttime="20220704 09:20:54.521" endtime="20220704 09:20:54.874"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220704 09:20:57.884" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220704 09:20:54.874" endtime="20220704 09:20:57.884"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:57.885" level="INFO">Clicking element '//button[text()='Edit']'.</msg>
+<status status="PASS" starttime="20220704 09:20:57.884" endtime="20220704 09:20:57.953"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:54.520" endtime="20220704 09:20:57.953"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:54.520" endtime="20220704 09:20:57.953"/>
+</kw>
+<kw name="Scenario 18: User klik button kembali from edit output">
+<kw name="Click Button Kembali" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnKembali}</arg>
 <arg>timeout=30s</arg>
-</arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20220628 21:44:20.672" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-67.png"&gt;&lt;img src="selenium-screenshot-67.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220628 21:44:20.294" endtime="20220628 21:44:20.672"></status>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:57.954" endtime="20220704 09:20:57.977"/>
 </kw>
-<msg timestamp="20220628 21:44:20.673" level="FAIL">Element '//*[@role = 'textbox' and @aria-label = 'Rich Text Editor, main']' not visible after 30 seconds.</msg>
-<status status="FAIL" starttime="20220628 21:43:50.107" endtime="20220628 21:44:20.673"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnKembali}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:57.977" level="INFO">Clicking element '//label[text()='Kembali']'.</msg>
+<status status="PASS" starttime="20220704 09:20:57.977" endtime="20220704 09:20:58.034"/>
 </kw>
-<status status="FAIL" starttime="20220628 21:43:45.633" endtime="20220628 21:44:20.673"></status>
+<status status="PASS" starttime="20220704 09:20:57.954" endtime="20220704 09:20:58.034"/>
 </kw>
-<status status="FAIL" starttime="20220628 21:43:45.632" endtime="20220628 21:44:20.677"></status>
+<status status="PASS" starttime="20220704 09:20:57.954" endtime="20220704 09:20:58.034"/>
 </kw>
-<doc>Regression Menu AWP</doc>
-<tags>
+<kw name="Scenario 19: User mengklik tambah output, mengisi form output kegiatan">
+<kw name="Click Button Tambah Output indikator keberhasilan" library="monev">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnTambahOutput}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:58.035" level="INFO">Clicking element '//button[text()='Tambah Output/Indikator Keberhasilan']'.</msg>
+<status status="PASS" starttime="20220704 09:20:58.035" endtime="20220704 09:20:58.173"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:58.035" endtime="20220704 09:20:58.173"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:58.035" endtime="20220704 09:20:58.173"/>
+</kw>
+<kw name="Scenario 20: User Klik Button Kembali from page indikator keberhasilan">
+<kw name="Click Button Kembali" library="monev">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btnKembali}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220704 09:20:58.174" endtime="20220704 09:20:58.197"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnKembali}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220704 09:20:58.198" level="INFO">Clicking element '//label[text()='Kembali']'.</msg>
+<status status="PASS" starttime="20220704 09:20:58.198" endtime="20220704 09:20:58.252"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:58.174" endtime="20220704 09:20:58.252"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:58.174" endtime="20220704 09:20:58.252"/>
+</kw>
+<kw name="Finish Testcase" library="browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220704 09:20:58.253" endtime="20220704 09:21:01.777"/>
+</kw>
+<status status="PASS" starttime="20220704 09:20:58.253" endtime="20220704 09:21:01.778"/>
+</kw>
+<doc>Regression Menu Monev</doc>
 <tag>Functionality</tag>
-</tags>
-<status status="FAIL" starttime="20220628 21:43:01.650" endtime="20220628 21:44:20.678" critical="yes">Element '//*[@role = 'textbox' and @aria-label = 'Rich Text Editor, main']' not visible after 30 seconds.</status>
+<status status="PASS" starttime="20220704 09:20:36.242" endtime="20220704 09:21:01.779"/>
 </test>
-<doc>Regression Test Menu AWP</doc>
-<status status="FAIL" starttime="20220628 21:43:01.149" endtime="20220628 21:44:20.681"></status>
+<doc>Regression Test Menu Monev</doc>
+<status status="PASS" starttime="20220704 09:20:36.059" endtime="20220704 09:21:01.782"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Functionality</stat>
+<stat pass="1" fail="0" skip="0">Functionality</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="05 Awp">05 Awp</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="17 Monev">17 Monev</stat>
 </suite>
 </statistics>
 <errors>
