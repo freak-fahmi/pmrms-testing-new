@@ -27,6 +27,13 @@ Menu Administrasi Direktori Staff
     Scenario 10: User Input Data Pencarian Unit Kerja Lalu klik Button Cari
     Scenario 11: User Input Data Pencarian Jabatan Lalu klik Button Cari
     Scenario 12: User menginputkan character dan simbol di field search lalu klik cari
+    Scenario 13: User mengfilter daftar staf komponen 1
+    Scenario 14: User mengfilter daftar staf komponen 2
+    Scenario 15: User mengfilter daftar staf komponen 3
+    Scenario 16: User mengfilter daftar staf komponen 4.1
+    Scenario 17: User mengfilter daftar staf komponen 4.2
+    Scenario 18: User mengfilter daftar staf komponen 4.3
+    Scenario 19: User mengfilter daftar staf komponen 4.4
 
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
@@ -75,6 +82,20 @@ Scenario 12: User menginputkan character dan simbol di field search lalu klik ca
     Input Data No Data
     Click Button Cari
     Verify No Data
+Scenario 13: User mengfilter daftar staf komponen 1
+    Click Button Filter Komponen 1
+Scenario 14: User mengfilter daftar staf komponen 2
+    Click Button Filter Komponen 2
+Scenario 15: User mengfilter daftar staf komponen 3
+    Click Button Filter Komponen 3
+Scenario 16: User mengfilter daftar staf komponen 4.1
+    Click Button Filter Komponen 4.1
+Scenario 17: User mengfilter daftar staf komponen 4.2
+    Click Button Filter Komponen 4.2
+Scenario 18: User mengfilter daftar staf komponen 4.3
+    Click Button Filter Komponen 4.3
+Scenario 19: User mengfilter daftar staf komponen 4.4
+    Click Button Filter Komponen 4.4
 
 
 

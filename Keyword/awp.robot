@@ -207,6 +207,18 @@ Input Capaian PDO
     Execute JavaScript              document.evaluate("${btnLanjut}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+Input Kendala
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Input Informasi Tambahan
+    Execute JavaScript              document.evaluate("${btnLanjut}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Save Informasi Tambahan
+    Execute JavaScript              document.evaluate("${btnSimpan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
 #    Click Element    ${btnLanjut}
 #    Click Element    ${btnLanjut}
 #    Click Element    ${btnLanjut}

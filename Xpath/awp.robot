@@ -66,4 +66,5 @@ ${export2021}           //label[text()='Export Tahun 2021']
 ${DownloadAwp}          //label[text()='Download AWP']
 ${editInfoTambahan}     //label[text()='Edit Informasi Tambahan']
 ${inputCapaian}         //*[@role = 'textbox' and @aria-label = 'Rich Text Editor, main']
+${inputKendala}        //div[@id='layout-wrapper']/div[1]/div[1]/app-other-information-awp[1]/div[1]/div[1]/div[2]/div[1]/div[1]/aw-wizard[1]/div[1]/aw-wizard-step[4]/div[1]/div[4]/div[1]/ckeditor[1]/div[2]/div[2]/div[1]
 

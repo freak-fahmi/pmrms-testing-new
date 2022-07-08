@@ -25,3 +25,12 @@ ${verifyPengajuanKegiatan}   //label[text()='Formulir Pengajuan Kegiatan di Luar
 ${inputCari}                 //input[contains(@class,'form-control ng-untouched')]
 ${btnCari}                   //button[text()='Cari']
 ${nodata}                    //td[@class='no-data-available text-center']
+${btnFilter}                //div[@class='col-md-6 text-end']
+${Pilihkomponen}            //label[text()='Colored']/following::input
+${komponen1}                //span[text()='Komponen 1']
+${komponen2}                //span[text()='Komponen 2']
+${komponen3}                //span[text()='Komponen 3']
+${komponen4.1}              //span[text()='Komponen 4.1']
+${komponen4.2}              //span[text()='Komponen 4.2']
+${komponen4.3}              //span[text()='Komponen 4.3']
+${komponen4.4}              //span[text()='Komponen 4.4']

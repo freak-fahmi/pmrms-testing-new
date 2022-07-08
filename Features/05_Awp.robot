@@ -32,6 +32,11 @@ Menu AWP
 #    Scenario 12: User Mengklik Button Kembali dari page tambah awp
 #    Scenario 13: User Mengklik Button Batal dari page tambah awp
 #    Scenario 14: User Download Export AWP ke Doc
+    Scenario 15: User Edit Informasi Tambahan pada Konfirmasi Export AWP
+    Scenario 16: User Input Capaian PDO
+    Scenario 17: User Input Kendala
+    Scenario 18: User Input Tambahan Informasi
+    Scenario 19: User Menyimpan Informasi Tambahan
 
 
 *** Keywords ***
@@ -96,6 +101,12 @@ Scenario 15: User Edit Informasi Tambahan pada Konfirmasi Export AWP
     Click Edit Informasi Tambahan
 Scenario 16: User Input Capaian PDO
     Input Capaian PDO
+Scenario 17: User Input Kendala
+    Input Kendala
+Scenario 18: User Input Tambahan Informasi
+    Input Informasi Tambahan
+Scenario 19: User Menyimpan Informasi Tambahan
+    Save Informasi Tambahan
 
 
 

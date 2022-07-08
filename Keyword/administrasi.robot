@@ -89,4 +89,26 @@ Click Button Simpan
     Execute JavaScript              document.evaluate("${btnSimpan}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
-
+Click Button Filter Komponen 1
+    Wait Until Element Is Visible   ${btnFilter}
+    Click Element                   ${btnFilter}
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen1}
+Click Button Filter Komponen 2
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen2}
+Click Button Filter Komponen 3
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen3}
+Click Button Filter Komponen 4.1
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen4.1}
+Click Button Filter Komponen 4.2
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen4.2}
+Click Button Filter Komponen 4.3
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen4.3}
+Click Button Filter Komponen 4.4
+    Click Element                   ${pilihkomponen}
+    Click Element                   ${komponen4.4}
