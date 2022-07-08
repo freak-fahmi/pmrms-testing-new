@@ -20,23 +20,22 @@ Menu AWP
     Scenario 3: User mengklik button index page untuk melihat data selanjutnya
     Scenario 4: User mengklik field search input by Nama Kegiatan
     Scenario 5: User mengklik field search input by Pagu Anggaran Awp
-#    Scenario 6: User Mengklik Detail Awp
-#    Scenario 7: User Mengklik Button Kembali dari detail awp
+    Scenario 6: User Mengklik Detail Awp
+    Scenario 7: User Mengklik Button Kembali dari detail awp
     Scenario 8: User mengklik field search input by Komponen Awp
     Scenario 9: User menginputkan karakter dan angka tidak sesuai
     Scenario 14: User Download Export AWP ke Doc
     Scenario 15: User Edit Informasi Tambahan pada Konfirmasi Export AWP
     Scenario 16: User Input Capaian PDO
-#    Scenario 10: User Mengklik Button Tambah AWP
-#    Scenario 11: User menginput data pada form lalu melakukan save
-#    Scenario 12: User Mengklik Button Kembali dari page tambah awp
-#    Scenario 13: User Mengklik Button Batal dari page tambah awp
-#    Scenario 14: User Download Export AWP ke Doc
-    Scenario 15: User Edit Informasi Tambahan pada Konfirmasi Export AWP
-    Scenario 16: User Input Capaian PDO
     Scenario 17: User Input Kendala
     Scenario 18: User Input Tambahan Informasi
     Scenario 19: User Menyimpan Informasi Tambahan
+    Scenario 10: User Mengklik Button Tambah AWP
+    Scenario 11: User menginput data pada form lalu melakukan save
+    Scenario 12: User Mengklik Button Kembali dari page tambah awp
+    Scenario 13: User Mengklik Button Batal dari page tambah awp
+    Scenario 14: User Download Export AWP ke Doc
+
 
 
 *** Keywords ***

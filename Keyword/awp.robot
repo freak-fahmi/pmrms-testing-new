@@ -61,7 +61,8 @@ Verify Pagination AWP
     Wait Until Element Is Visible       ${verfyPagination}
     Page Should Contain Element         ${verfyPagination}
 Click Button Tambah AWP
-    Click Element    ${btnAdd}
+    Wait Until Element Is Visible   ${btnAdd}   timeout=30s
+    Click Element                   ${btnAdd}
 Verify Page Tambah AWP
     Wait Until Element Is Visible       ${verifyAddAwp}
     Page Should Contain Element         ${verifyAddAwp}
@@ -89,6 +90,7 @@ Input Data Umum
     Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+    Click Element                   ${clickSubSubComponent}
     Sleep    3s
     Execute JavaScript              document.evaluate("${pilihKegiatan}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
