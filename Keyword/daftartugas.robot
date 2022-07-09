@@ -17,6 +17,9 @@ Verify Page Daftar Tugas
 Click Tab Penugasan
     Wait Until Element Is Visible    ${tabPenugasan}    timeout=30s
     Click Element    ${tabPenugasan}
+Click Kalender Event
+    wait until element is visible    ${kalenderEvent}   timeout=30s
+    click element    ${kalenderEvent}
 Click Button Buat Tugas
     Click Element    ${btnBuatTugas}
 Verify Element Page Buat Tugas
@@ -78,10 +81,16 @@ Verify Searching Penugasan
 Click Buttton Lihat Tugas
     Wait Until Element Is Visible    ${btnLihatTugas}       timeout=30s
     Click Element    ${btnLihatTugas}
+Click Buttton Lihat
+    Wait Until Element Is Visible    ${btnLihat}       timeout=30s
+    Click Element    ${btnLihat}
+Click Tab Tanggapan peserta
+    click element    ${tanggapanPeserta}
 Verify Detail Tugas
     Wait Until Element Is Visible    ${verifyDetailTugas}   timeout=30s
     Page Should Contain Element      ${verifyDetailTugas}
 Click Button Kembali
+    wait until element is visible    ${btnKembali}      timeout=30s
     Execute JavaScript              document.evaluate("${btnKembali}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();

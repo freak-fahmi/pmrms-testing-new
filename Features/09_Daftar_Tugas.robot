@@ -18,15 +18,15 @@ Menu Daftar Tugas
     Scenario 1: Input Valid Username role komponen 4
     Scenario 2: User mengklik menu Daftar Tugas
     Scenario 3: User Melakukan pencarian di tab tugas saya
-#    Scenario 4: User Melakukan pencarian di tab penugasan saya
+    Scenario 4: User Melakukan pencarian di tab penugasan saya
     Scenario 5: User Mengklik Lihat Tugas Pada Tab Tugas Saya
     Scenario 6: User Mengklik Button Kembali dari page detail tugas
 #    Scenario 7: User Mengklik Button Simpan dari Detail Tugas
-#    Scenario 8: User Mengklik Button Batal dari detail tugas
-#    Scenario 9: User Mengklik Lihat Tugas Pada Tab Penugasan Saya
-#    Scenario 10: User Mengklik Button Kembali dari detail tugas penugasan
+    Scenario 8: User Mengklik Button Keluar dari detail tugas
+    Scenario 9: User Mengklik Kalender Event
+    Scenario 10: User Mengklik tab tanggapan peserta
 #    Scenario 11. User Mengklik Button Edit Lalu Simpan
-    Scenario 12: User Mengklik Tab Penugasan lalu buat tugas
+#    Scenario 12: User Mengklik Tab Penugasan lalu buat tugas
 #    Scenario 13: User Menginput Tambah Tugas Lalu klik Simpan
 *** Keywords ***
 Scenario 1: Input Valid Username role komponen 4
@@ -57,22 +57,19 @@ Scenario 6: User Mengklik Button Kembali dari page detail tugas
     Click Button Kembali
     Verify Page Daftar Tugas
 Scenario 7: User Mengklik Button Simpan dari Detail Tugas
-    Click Buttton Lihat Tugas
+    Click Buttton Lihat
     Verify Detail Tugas
     Click Button Simpan
     Verify Page Daftar Tugas
-Scenario 8: User Mengklik Button Batal dari detail tugas
-    Click Buttton Lihat Tugas
+Scenario 8: User Mengklik Button Keluar dari detail tugas
+    Click Buttton Lihat
     Verify Detail Tugas
     Click Button Keluar
     Verify Page Daftar Tugas
-Scenario 9: User Mengklik Lihat Tugas Pada Tab Penugasan Saya
-    Click Tab Penugasan
-    Click Buttton Lihat Tugas
-    Verify Detail Tugas
-Scenario 10: User Mengklik Button Kembali dari detail tugas penugasan
-    Click Button Kembali
-    Verify Page Daftar Tugas
+Scenario 9: User Mengklik Kalender Event
+    Click Kalender Event
+Scenario 10: User Mengklik tab tanggapan peserta
+    Click Tab Tanggapan peserta
 Scenario 11. User Mengklik Button Edit Lalu Simpan
     Click Tab Penugasan
     Click Buttton Lihat Tugas

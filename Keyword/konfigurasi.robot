@@ -7,8 +7,9 @@ Resource    ../Xpath/konfigurasi.robot
 
 *** Keywords ***
 Click Menu Konfigurasi
-    Wait Until Element Is Visible    ${menuKonfigurasi}
-    Click Element                    ${menuKonfigurasi}
+    go to    http://pmrms.greatpmo.com/configuration/list
+#    Wait Until Element Is Visible    ${menuKonfigurasi}
+#    Click Element                    ${menuKonfigurasi}
 Verify Page Konfigurasi
     Wait Until Element Is Visible    ${verifyPengguna}
     Page Should Contain Element      ${verifyPengguna}
