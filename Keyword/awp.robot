@@ -82,6 +82,7 @@ Input Data Umum
     Click Element    ${pilihKomponen}
     Click Element    ${clickKomponen}
     Click Element    ${clickKomponen}
+    Wait Until Element Is Visible     ${pilihSubcomponent}      timeout=30s
     Click Element    ${pilihSubcomponent}
     Wait Until Element Is Visible     ${clickSubComponent}  timeout=10s
     Click Element    ${clickSubComponent}
@@ -90,6 +91,7 @@ Input Data Umum
     Execute JavaScript              document.evaluate("${pilihSubSubComponent}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+    sleep    3s
     Click Element                   ${clickSubSubComponent}
     Sleep    3s
     Execute JavaScript              document.evaluate("${pilihKegiatan}",

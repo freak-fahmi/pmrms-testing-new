@@ -34,7 +34,7 @@ Menu AWP
     Scenario 11: User menginput data pada form lalu melakukan save
     Scenario 12: User Mengklik Button Kembali dari page tambah awp
     Scenario 13: User Mengklik Button Batal dari page tambah awp
-#    Scenario 14: User Download Export AWP ke Doc
+    Scenario 14: User Download Export AWP ke Doc
 
 
 
