@@ -41,4 +41,6 @@ ${catatanSetuju}            //label[text()='Colored']/following::textarea
 ${btnKirim}                 //label[.='Kirim']
 ${filterTahun}              //button[.='Semua Tahun']
 ${pilihTahun}               //label[.='AWP Tahun 2022']
+${InputKetResiko}           //div[@role='combobox']//input[1]
+${pilihKetResiko}           //span[text()='Beban kerja terlalu tinggi']
 

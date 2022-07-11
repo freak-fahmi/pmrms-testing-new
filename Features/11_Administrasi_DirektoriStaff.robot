@@ -1,3 +1,4 @@
+
 *** Settings ***
 Documentation  Regression Test Menu Administrasi Direktori Staff
 Library     SeleniumLibrary
@@ -17,12 +18,12 @@ Menu Administrasi Direktori Staff
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik Menu Administrasi lalu pilih menu Direktori Staff
-    Scenario 3: User mengklik menu lihat detail staff dari page direktori staff
-    Scenario 4: User Mengklik Button Edit pada Page Detail Staff
-    Scenario 5: User Mengklik Button Kembali dari page edit staff
-    Scenario 6: User Mengklik Button Batal dari Page edit staff
-    Scenario 7: User Mengklik Button Edit Lalu Klik Simpan
-    Scenario 8: User Mengklik Button Kembali dari Page Detail Staff
+#    Scenario 3: User mengklik menu lihat detail staff dari page direktori staff
+#    Scenario 4: User Mengklik Button Edit pada Page Detail Staff
+#    Scenario 5: User Mengklik Button Kembali dari page edit staff
+#    Scenario 6: User Mengklik Button Batal dari Page edit staff
+#    Scenario 7: User Mengklik Button Edit Lalu Klik Simpan
+#    Scenario 8: User Mengklik Button Kembali dari Page Detail Staff
     Scenario 9: User Input Data Pencarian Nama Staff Lalu klik Button Cari
     Scenario 10: User Input Data Pencarian Unit Kerja Lalu klik Button Cari
     Scenario 11: User Input Data Pencarian Jabatan Lalu klik Button Cari
