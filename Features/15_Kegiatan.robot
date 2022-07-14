@@ -6,7 +6,7 @@ Resource    ../Keyword/kegiatan.robot
 Resource    ../Keyword/login.robot
 
 #Test Setup  Open Browser
-Test Teardown   Finish Testcase
+#Test Teardown   Finish Testcase
 
 *** Variables ***
 
@@ -20,7 +20,7 @@ Menu Kegiatan
     Scenario 16: User melakukan Filter data by Tahun
     Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
-    Scenario 5: User Mengklik Sorting Status
+#    Scenario 5: User Mengklik Sorting Status
     Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Scenario 7: User Mengklik Button Keluar dari detail kegiatan
     Scenario 8: User Mengklik Lihat Detail kegiatan

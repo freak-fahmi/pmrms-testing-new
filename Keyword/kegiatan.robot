@@ -108,6 +108,7 @@ Input Data Pelaksanaan
     Input Text    ${inputAsumsi}    Automation Testing
     Input Text    ${inputResiko}    Automation testing
     Input Text    ${InputKetResiko}     Beban
+    Sleep    3s
     Click Element  ${pilihKetResiko}
     Execute JavaScript              document.evaluate("${angkapotensi}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).

@@ -5,7 +5,7 @@ ${inputCari}                 //input[contains(@class,'form-control ng-untouched'
 ${btnCari}                   //button[text()='Cari']
 ${verifyNamaKegiatan}        //td[text()='Kegiatan baru 1']
 ${lihatDetail}               //button[text()='Lihat']
-${btnLihatDetailNew}         //td[.='Baru']/..//td[.='Lihat']
+${btnLihatDetailNew}         //td[.='Baru']/..//td[.='Lihat']//button
 ${btnLihatDetailRencana}     //td[.='Perencanaan']/..//td[.='Lihat']
 ${btnLihatPersetujuan}       //td[.='Menunggu Persetujuan']/..//td[.='Lihat']
 ${btnKembali}               //label[text()='Kembali']
