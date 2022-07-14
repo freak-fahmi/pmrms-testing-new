@@ -1,18 +1,18 @@
 *** Settings ***
 Library     SeleniumLibrary
-Library    FakerLibrary
+#Library    FakerLibrary
 Resource    ../Xpath/daftartugas.robot
 
 *** Variables ***
 
 *** Keywords ***
 Click Menu Profile
-    Wait Until Element Is Visible    ${profileButton}
+    Wait Until Element Is Visible    ${profileButton}       timeout=30s
     Click Element                    ${profileButton}
 Click Button Daftar Tugas
     Click Element                    ${daftarTugas}
 Verify Page Daftar Tugas
-    Wait Until Element Is Visible    ${verifyDaftarTugas}
+    Wait Until Element Is Visible    ${verifyDaftarTugas}       timeout=30s
     Page Should Contain Element      ${verifyDaftarTugas}
 Click Tab Penugasan
     Wait Until Element Is Visible    ${tabPenugasan}    timeout=30s
