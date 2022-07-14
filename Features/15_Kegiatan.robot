@@ -18,9 +18,9 @@ Menu Kegiatan
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu kegiatan
     Scenario 16: User melakukan Filter data by Tahun
-#    Scenario 3: User melakukan pencarian dengan data tidak sesuai
-#    Scenario 4: User melakukan pencarian data by nama kegiatan
-#    Scenario 5: User Mengklik Sorting Status
+    Scenario 3: User melakukan pencarian dengan data tidak sesuai
+    Scenario 4: User melakukan pencarian data by nama kegiatan
+    Scenario 5: User Mengklik Sorting Status
     Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Scenario 7: User Mengklik Button Keluar dari detail kegiatan
     Scenario 8: User Mengklik Lihat Detail kegiatan
