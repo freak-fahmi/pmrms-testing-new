@@ -44,13 +44,13 @@ Click Sorting Status Asc
     Click Element    ${sorting}
 
 Click Button Lihat Kegiatan New
-    Sleep    3s
+    Sleep    5s
     Wait Until Element Is Visible    ${btnLihatDetailNew}   timeout=30s
-#    Execute JavaScript              document.evaluate("${btnLihatDetailNew}",
-#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-#                                    ...    snapshotItem(0).click();
+    Execute JavaScript              document.evaluate("${btnLihatDetailNew}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
 
-    Click Element                       ${btnLihatDetailNew}
+#    Click Element                       ${btnLihatDetailNew}
 Click Button Lihat Kegiatan Perencanaan
     Sleep    3s
     Wait Until Element Is Visible       ${btnLihatDetailRencana}    timeout=30s

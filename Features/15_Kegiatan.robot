@@ -17,20 +17,20 @@ Menu Kegiatan
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu kegiatan
-    Scenario 16: User melakukan Filter data by Tahun
-    Scenario 3: User melakukan pencarian dengan data tidak sesuai
-    Scenario 4: User melakukan pencarian data by nama kegiatan
+#    Scenario 16: User melakukan Filter data by Tahun
+#    Scenario 3: User melakukan pencarian dengan data tidak sesuai
+#    Scenario 4: User melakukan pencarian data by nama kegiatan
 #    Scenario 5: User Mengklik Sorting Status
     Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Scenario 7: User Mengklik Button Keluar dari detail kegiatan
     Scenario 8: User Mengklik Lihat Detail kegiatan
     Scenario 9: User Mengklik Button kembali dari page detail kegiatan
     Scenario 10: Consultan Logout
-    Scenario 11: Login Coordinator
-    Scenario 12: Coordinator Melakukan Quality Entry
-    Scenario 13: Coordinator Melakukan Approval
-    Scenario 14: Login PMU
-    Scenario 15: PMU Melakukan Approval
+#    Scenario 11: Login Coordinator
+#    Scenario 12: Coordinator Melakukan Quality Entry
+#    Scenario 13: Coordinator Melakukan Approval
+#    Scenario 14: Login PMU
+#    Scenario 15: PMU Melakukan Approval
 *** Keywords ***
 Scenario 1: Login with username valid and password valid
     Given Login page is open
