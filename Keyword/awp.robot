@@ -82,6 +82,7 @@ Input Data Umum
     Click Element    ${pilihKomponen}
     Click Element    ${clickKomponen}
     Click Element    ${clickKomponen}
+    sleep    5s
     Wait Until Element Is Visible     ${pilihSubcomponent}      timeout=30s
     Click Element    ${pilihSubcomponent}
     Wait Until Element Is Visible     ${clickSubComponent}  timeout=10s
