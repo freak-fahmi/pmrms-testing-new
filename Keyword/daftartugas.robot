@@ -91,9 +91,10 @@ Verify Detail Tugas
     Page Should Contain Element      ${verifyDetailTugas}
 Click Button Kembali
     wait until element is visible    ${btnKembali}      timeout=30s
-    Execute JavaScript              document.evaluate("${btnKembali}",
-                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
-                                    ...    snapshotItem(0).click();
+    Click Element    ${btnKembali}
+#    Execute JavaScript              document.evaluate("${btnKembali}",
+#                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+#                                    ...    snapshotItem(0).click();
 Click Button Edit
     Sleep    5s
 #    Wait Until Element Is Visible    ${btnEdit}     timeout=30s

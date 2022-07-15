@@ -37,6 +37,7 @@ Click Button Lihat Kegiatan
     Wait Until Element Is Visible     ${lihatDetail}
     Click Element                       ${lihatDetail}
 Click Sorting Status
+    Wait Until Element Is Visible    ${sorting}     timeout=30s
     Click Element    ${sorting}
 Click Sorting Status Asc
     Click Element    ${sorting}

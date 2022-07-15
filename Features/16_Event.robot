@@ -17,7 +17,7 @@ Menu Event
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu Event
-    Scenario 3: User melakukan pencarian dengan data tidak sesuai
+#    Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Scenario 4: User melakukan pencarian data by nama kegiatan
     Scenario 24: Go to Detail Event
     Scenario 25: Sort Status

@@ -56,12 +56,14 @@ Select Unit Kerja
     Select From List By Index    ${selectUnitKerja}     1
 select Komponent
     Click Element    ${PilihUnit}
+#    Click Element    ${pilihUnitPCU}
 pilih komponen
     Click Element    ${komponen}
 Select Role
     Click Element    ${roleStaff}
 Select Role LSP
-    Click Element    ${roleLSP} 
+#    Click Element    ${roleLSP}
+    Click Element    ${rolePCU}
 Input Start Date
     Input Text    ${startDate}    2022-03-06
 Input End Date
@@ -81,7 +83,7 @@ Input Data Tambah Pengguna
     input Text     ${inputNamaDepan}    test${numbers}
     Input Text     ${inputNamaBelakang}    auto${numbers}
     Input Text     ${email}     automation${numbers}
-    Select From List By Index    ${selectUnitKerja}     0
+    Select From List By Index     ${selectUnitKerja}    0
     Click Element    ${PilihUnit}
     Click Element    ${komponen}
     Click Element    ${btnTambahRole}
@@ -108,5 +110,37 @@ Click Button Batal Tambah Pengguna
     Wait Until Element Is Visible    ${btnBatalPengguna}
 #    Click Element                    ${btnBatal}
     Execute JavaScript              document.evaluate("${btnBatalPengguna}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+Input Data Tambah Pengguna PCU
+    ${numbers}=    Generate Random String      4    0123456789
+    input Text     ${inputNamaDepan}    test${numbers}
+    Input Text     ${inputNamaBelakang}    auto${numbers}
+    Input Text     ${email}     automation${numbers}
+    Select From List By Index     ${selectUnitKerja}    1
+    Click Element    ${pilihProvinsi}
+    Click Element    ${Provinsi}
+    Click Element    ${btnTambahRole}
+    Click Element    ${rolePCU}
+    Input Text       ${InputNoTelp}    812346789
+#    Scroll Element Into View    ${btnBatalPengguna}
+    Sleep    5s
+    Input Text       ${Jabatan2}        Ketua
+    Execute JavaScript              document.evaluate("${pilihJabatan}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Wait Until Element Is Visible    ${PilihSupervisor}
+    Execute Javascript              document.evaluate("${PilihSupervisor}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Execute Javascript              document.evaluate("${Supervisor}",
+                                    ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
+                                    ...    snapshotItem(0).click();
+    Click Element    ${btnUbahPhoto}
+    Choose File      ${inputPhoto}        D://Image/testing.jpg
+    Click Element    ${btnSimpanUploadPhoto}
+
+Click Button Simpan Tambah Pengguna PCU
+    Execute JavaScript              document.evaluate("${btnSimpanPengguna}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();

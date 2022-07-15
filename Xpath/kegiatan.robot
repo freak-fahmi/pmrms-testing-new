@@ -1,5 +1,5 @@
 *** Variables ***
-${menuKegiatan}                  //a[contains(.,'Kegiatan')]
+${menuKegiatan}                  //a[@href='/implement/kegiatan']
 ${verifyKegiatan}               //label[@class='title-header']
 ${inputCari}                 //input[contains(@class,'form-control ng-untouched')]
 ${btnCari}                   //button[text()='Cari']

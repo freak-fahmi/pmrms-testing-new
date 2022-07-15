@@ -17,10 +17,10 @@ Menu Kegiatan
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik sidebar menu kegiatan
-#    Scenario 16: User melakukan Filter data by Tahun
-#    Scenario 3: User melakukan pencarian dengan data tidak sesuai
-#    Scenario 4: User melakukan pencarian data by nama kegiatan
-#    Scenario 5: User Mengklik Sorting Status
+    Scenario 16: User melakukan Filter data by Tahun
+    Scenario 3: User melakukan pencarian dengan data tidak sesuai
+    Scenario 4: User melakukan pencarian data by nama kegiatan
+    Scenario 5: User Mengklik Sorting Status
     Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Scenario 7: User Mengklik Button Keluar dari detail kegiatan
     Scenario 8: User Mengklik Lihat Detail kegiatan
@@ -46,12 +46,13 @@ Scenario 16: User melakukan Filter data by Tahun
 Scenario 3: User melakukan pencarian dengan data tidak sesuai
     Search Pencarian No Data
     Kegiatan.Click Button Cari
-    Kegiatan.Verify No Data
+#    Kegiatan.Verify No Data
 Scenario 4: User melakukan pencarian data by nama kegiatan
     Search Pencarian by Nama Kegiatan
     Kegiatan.Click Button Cari
 #    Verify Nama Kegiatan
 Scenario 5: User Mengklik Sorting Status
+    Go To    http://pmrms.greatpmo.com/implement/kegiatan
     Click Sorting Status
 Scenario 6: Konsultan Melakukan Implementasi Kegiatan
     Click Button Lihat Kegiatan New
