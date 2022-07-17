@@ -17,9 +17,9 @@ Menu Konfigurasi
     [Tags]  Functionality
     Scenario 1: Login with username valid and password valid
     Scenario 2: User mengklik menu konfigurasi
-#    Scenario 3: User mengklik button tambah pengguna
-#    Scenario 4: User menambahkan pengguna dengan role LSP
-#    Scenario 5: User mengklik Batal dari page tambah pengguna
+    Scenario 3: User mengklik button tambah pengguna
+    Scenario 4: User menambahkan pengguna dengan role LSP
+    Scenario 5: User mengklik Batal dari page tambah pengguna
     Scenario 6: User Search Pencarian by Nama Lengkap
     Scenario 7: User Search Pencarian by Email
     Scenario 9: User menambahkan pengguna dengan role PCU
@@ -61,6 +61,7 @@ Scenario 9: User menambahkan pengguna dengan role PCU
     Click Button Tambah Pengguna
     Verify Page Tambah Pengguna
     Input Data Tambah Pengguna PCU
+    Klik Simpan
     Click Button Simpan Tambah Pengguna PCU
 
 

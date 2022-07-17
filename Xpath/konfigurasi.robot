@@ -41,6 +41,8 @@ ${Jabatan2}                   (//div[@role='combobox']//input)[2]
 ${pilihJabatan}               //span[text()='Ketua PCU']
 ${Supervisor}                 //label[text()='Doni Wibowo (Secretary PMU)']
 ${PilihSupervisor}            //label[text()='Pilih Supervisor']
+${btnOK}                      //button[text()='OK']
+${btnBatal}                   //button[text()='Batal']
 
 
 

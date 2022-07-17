@@ -144,3 +144,11 @@ Click Button Simpan Tambah Pengguna PCU
     Execute JavaScript              document.evaluate("${btnSimpanPengguna}",
                                     ...    document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).
                                     ...    snapshotItem(0).click();
+Ready Database
+    Click Element    ${btnOK}
+    Click Element    ${btnBatal}
+Klik Simpan
+    ${pilih_ok}  run keyword and return status
+                      ...   page should contain element  ${btnOK}
+    log to console      ${pilih_ok}
+    run keyword if     '${pilih_ok}'=='True'   Ready Database
